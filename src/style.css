@@ -1,0 +1,94 @@
+:root {
+  scroll-behavior: smooth;
+  --para:'Inter';
+  --para:'Roboto';
+  --heading:'Bricolage Grotesque';
+
+}
+
+* {
+  font-family: var(--para), sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /* font-style: normal; */
+  letter-spacing: 0.1px;
+
+}
+
+body{
+  background-image: image-set('./assets/spiralSVG.svg');
+  cursor: default;
+}
+
+button {
+  font-family: var(--para), sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading), sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  /* font-style: normal; */
+}
+
+.glassy {
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  backdrop-filter: blur(20px);
+  z-index: 1 !important;
+}
+.swipercontainer{
+  z-index: 0 !important;
+}
+header,nav,footer{
+  z-index: 1 !important;
+
+}
+
+#service{
+  background-image: url(./assets/images/servicesction.svg);
+  
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-attachment: fixed;
+  
+}
+.heroBG{
+  background-image: url(./assets/images/heroBG.svg);
+  
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: scroll;
+  
+}
+::-webkit-scrollbar{
+  background-color: #111827;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb{
+
+  border-radius: 100px;
+  background-color: #cbd5e150;
+}
+@media screen and (max-width:1080px) {
+
+  #service,.heroBG{
+    background-image: none;
+    
+  
+  }  
+}
+::selection{
+  background-color: #0ea5e920;
+  color: #fff;
+}
+
