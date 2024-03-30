@@ -1,32 +1,42 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import './style.css';
-import { CircularProgress } from '@mui/material';
 
-import cssC from './assets/icons/color/css3.svg'
-import figmaC from './assets/icons/color/figma.svg'
-import gitC from './assets/icons/color/git.svg'
-import htmlC from './assets/icons/color/html.svg'
-import jsC from './assets/icons/color/js.svg'
-import reactC from './assets/icons/color/react.svg'
-import tailwindC from './assets/icons/color/tailwind.svg'
-import wordpressC from './assets/icons/color/wordpress.svg'
-import materialuiC from './assets/icons/color/materialui.svg'
+import cssC from '/icons/css3.svg'
+import figmaC from '/icons/figma.svg'
+import gitC from '/icons/git.svg'
+import htmlC from '/icons/html.svg'
+import jsC from '/icons/js.svg'
+import reactC from '/icons/react.svg'
+import tailwindC from '/icons/tailwind.svg'
+import wordpressC from '/icons/wordpress.svg'
+import materialuiC from '/icons/materialui.svg'
+
+import hero from '/images/hero.png'
+import service_wp from '/images/wpsite.png'
+import service_ui from '/images/paymentApp.png'
+import service_discord from '/images/discordServers.png'
+import service_digital from '/images/digitalDesign.png'
+
+import portfolio_2 from '/images/logo/logodevavatar.png'
+import portfolio_1 from '/images/logo/logoms.png'
+import portfolio_8 from '/images/logo/logohiro.png'
+import portfolio_3 from '/images/portfolioDesign.png'
+import portfolio_5 from '/images/conceptBiolink.png'
+import portfolio_6 from '/images/dashboard.png'
 
 
 import { accent, darkBG } from './theme.jsx'
-import { ButtonWhi, ButtonPri, ButtonSec, ButtonTer } from './components/Buttons.jsx';
-import TestimonialCard from './components/TestimonialCard.jsx';
-import Skill from './components/Skill.jsx';
+import { ButtonWhi, ButtonPri, ButtonSec } from './assets/components/Buttons.jsx';
+import TestimonialCard from './assets/components/TestimonialCard.jsx';
 
 import Brightness6RoundedIcon from '@mui/icons-material/Brightness6Rounded';
-import { ArrowOutwardRounded, AutoAwesomeOutlined, Brightness6Rounded, BubbleChart, ChargingStation, ChargingStationOutlined, Chat, ChatBubble, DarkModeRounded, Description, DirectionsWalk, DoneAll, Download, DownloadForOffline, ExpandMore, Explore, Facebook, FormatQuote, GitHub, Instagram, Layers, LinkedIn, Mail, PeopleAlt, PriceCheck, QuestionAnswerOutlined, RoomService, Send, SouthEast, Star, StarHalf, Telegram, Timelapse } from '@mui/icons-material';
+import {AutoAwesomeOutlined, Brightness6Rounded, BubbleChart, ChargingStation, ChargingStationOutlined, Chat, ChatBubble, DarkModeRounded, Description, DirectionsWalk, DoneAll, Download, DownloadForOffline, ExpandMore, Explore, Facebook, FormatQuote, GitHub, Instagram, Layers, LinkedIn, Mail, PeopleAlt, PriceCheck, QuestionAnswerOutlined, RoomService, Send, SouthEast, Star, StarHalf, Telegram, Timelapse } from '@mui/icons-material';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay} from 'swiper/modules';
 
 function App() {
   let FooterElemStyle = `py-2 transition-all duration-400 ease-in-out text-xs`
@@ -95,7 +105,7 @@ function App() {
             </div>
             <div className={`lg:max-w-lg lg:w-full md:w-1/2 w-full`}>
               {/* <img className={`hidden md:block object-cover object-center rounded-xl `} alt="hero" src="./src/assets/images/hero.png" /> */}
-              <img className={`hidden md:block object-cover object-center rounded-xl `} alt="hero" src="https://imgur.com/BabWKAg.png" />
+              <img className={`hidden md:block object-cover object-center rounded-xl `} alt="hero" src={hero} />
             </div>
           </div>
         </section>
@@ -341,7 +351,7 @@ function App() {
             <div className={`flex flex-wrap -m-4`}>
               <div className={`p-4 md:w-1/3`}>
                 <div className={`h-full bg-${accent}-700/10 rounded-xl overflow-hidden`}>
-                  <img className={`lg:h-48 md:h-36 w-full object-cover object-center`} src='https://imgur.com/1tMU3zX.png' alt="pricing" />
+                  <img className={`lg:h-48 md:h-36 w-full object-cover object-center`} src={service_wp} alt="pricing" />
                   <div className={`p-6`}>
                     <h2 className={`font-bold my-2 text-${accent}-500 text-xs font-bold`}>
                       7 days delivery</h2>
@@ -355,7 +365,7 @@ function App() {
               </div>
               <div className={`p-4 md:w-1/3`}>
                 <div className={`h-full bg-${accent}-700/10 rounded-xl overflow-hidden`}>
-                  <img className={`lg:h-48 md:h-36 w-full object-cover object-center`} src="https://imgur.com/jeGuHG6.png" alt="pricing" />
+                  <img className={`lg:h-48 md:h-36 w-full object-cover object-center`} src={service_ui} alt="pricing" />
                   <div className={`p-6`}>
                     <h2 className={`font-bold my-2 text-${accent}-500 text-xs font-bold`}>
                       7 days delivery</h2>
@@ -369,7 +379,7 @@ function App() {
               </div>
               <div className={`p-4 md:w-1/3`}>
                 <div className={`h-full bg-${accent}-700/10 rounded-xl overflow-hidden`}>
-                  <img className={`lg:h-48 md:h-36 w-full object-cover object-center`} src="https://imgur.com/RLztJij.png" alt="pricing" />
+                  <img className={`lg:h-48 md:h-36 w-full object-cover object-center`} src={service_discord} alt="pricing" />
                   <div className={`p-6`}>
                     <h2 className={`font-bold my-2 text-${accent}-500 text-xs font-bold`}>
                       3 days delivery</h2>
@@ -383,7 +393,7 @@ function App() {
               </div>
               <div className={`p-4 md:w-1/3`}>
                 <div className={`h-full bg-${accent}-700/10 rounded-xl overflow-hidden`}>
-                  <img className={`h-48 lg:h-48 md:h-36 sm:h-24 w-full object-cover object-center`} src="https://imgur.com/xZSJArm.jpg" alt="pricing" />
+                  <img className={`h-48 lg:h-48 md:h-36 sm:h-24 w-full object-cover object-center`} src={service_digital} alt="pricing" />
                   <div className={`p-6`}>
                     <h2 className={`font-bold my-2 text-${accent}-500 text-xs font-bold`}>
                       3 days delivery</h2>
@@ -409,21 +419,21 @@ function App() {
             <div className={`flex flex-wrap md:-m-2 -m-1`}>
               <div className={`flex flex-wrap w-1/2`}>
                 <div className={`w-1/2`}>
-                  <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src="https://imgur.com/AqBdwSG.png" />
+                  <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src={portfolio_1} />
                 </div>
                 <div className={`w-1/2`}>
-                  <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src="https://imgur.com/JMTM9ds.png" />
+                  <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src={portfolio_2} />
                 </div>
                 <div className={`w-full`}>
-                  <img alt="gallery" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src="https://imgur.com/1tMU3zX.png" />
+                  <img alt="wp site" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src={service_wp} />
                 </div>
               </div>
               <div className={`flex flex-wrap w-1/2`}>
                 <div className={`w-full`}>
-                  <img alt="gallery" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src="https://imgur.com/hBRM0Ge.png" />
+                  <img alt="portfolio ui" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src={portfolio_3} />
                 </div>
                 <div className={`w-full`}>
-                  <img alt="gallery" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src="https://imgur.com/RLztJij.png" />
+                  <img alt="paymentappaui" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src={service_discord} />
                 </div>
 
               </div>
@@ -432,26 +442,20 @@ function App() {
             <div className={`flex flex-wrap py-2 md:-m-2 -m-1 `}>
               <div className={`flex flex-wrap w-1/2`}>
                 <div className={``}>
-                  <img alt="gallery" className={`w-full object-contain  p-1 rounded-lg   h-full object-center block `} src="https://imgur.com/kQtV9EQ.png" />
-                  {/* <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src="./src/assets/images/logo-hiro.png" /> */}
+                  <img alt="biolink" className={`w-full object-contain  p-1 rounded-lg   h-full object-center block `} src={portfolio_5} />
                 </div>
-                <div className={`w-1/2`}>
-                  {/* <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src="./src/assets/images/logo-devavatar.png" /> */}
-                </div>
-                <div className={`w-full`}>
-                  {/* <img alt="gallery" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src="./src/assets/images/BasicPortfolio.png" /> */}
-                </div>
+                
               </div>
               <div className={`flex flex-wrap w-1/2`}>
                 <div className={`w-full`}>
-                  <img alt="gallery" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src="https://imgur.com/jeGuHG6.png" />
+                  <img alt="discord" className={`w-full h-full p-1 rounded-lg  object-cover object-center block `} src={service_ui} />
 
                 </div>
                 <div className={`w-full`}>
-                  <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src="https://imgur.com/dNABGjf.png" />
+                  <img alt="dashboard" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src={portfolio_6} />
                 </div>
                 <div className={`w-1/2`}>
-                  <img alt="gallery" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src="https://imgur.com/QOc8Wl4.png" />
+                  <img alt="hiro logo" className={`w-full p-1 rounded-lg  object-cover h-full object-center block `} src={portfolio_8} />
                 </div>
               </div>
             </div>

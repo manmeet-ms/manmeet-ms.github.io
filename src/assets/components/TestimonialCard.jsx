@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../theme.jsx'
+import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../../theme.jsx'
 import { Person, Star, StarHalf } from '@mui/icons-material';
 
 

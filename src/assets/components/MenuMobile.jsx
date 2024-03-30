@@ -1,8 +1,5 @@
 import React from 'react'
-import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../theme.jsx'
-import { ButtonPri, ButtonSec, ButtonTer, Anchor } from "./Buttons.jsx";
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../../theme.jsx'
 import { ArrowOutwardOutlined } from '@mui/icons-material';
 
 const MenuMobile = () => {

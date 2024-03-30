@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../theme.jsx'
+import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../../theme.jsx'
 import { Anchor, ButtonPri, ButtonSec, ButtonTer } from "./Buttons.jsx";
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 const MenuDesktop = () => {
 

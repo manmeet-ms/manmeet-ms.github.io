@@ -1,5 +1,5 @@
 import React from 'react'
-import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../theme.jsx'
+import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../../theme.jsx'
 const Footer = () => {
   return (
   <>

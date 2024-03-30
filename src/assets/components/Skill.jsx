@@ -1,8 +1,7 @@
 import React from 'react'
-import reactIco from '../assets/icons/color/react.svg'
+import reactIco from '/icons/react.svg'
 import { CircularProgress} from '@mui/material';
-import '../style.css';
-import { accent, darkBG } from '../theme.jsx'
+import { accent, darkBG } from '../../theme.jsx'
 
 const Skill = (props) => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../theme.jsx'
+import { accent, lightModeText, lightModeBG, darkModeText, darkModeBG, darkBG } from '../../theme.jsx'
 import GamepadIcon from '@mui/icons-material/Gamepad';
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 let commonStyle = " py-3 px-6 mr-2 mt-2 rounded-full transition-all duration-400 ease-in-out"
