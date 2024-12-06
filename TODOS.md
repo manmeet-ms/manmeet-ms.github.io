@@ -1,0 +1,9 @@
+- add wrokspace amazons
+- journet in my insagam posts
+  - apps i made 
+  - my freelance projects 
+  - and other other ournet post on linkedin too
+- little descripitiona thome ahtne readmore to /about
+- /about full description
+- uppdate links socil and look for onur name -> manmeet
+- how to create amazon affiliate link
