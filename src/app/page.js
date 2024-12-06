@@ -43,7 +43,7 @@ export default async function Home() {
             </Link>
           </Button>
           <Suspense fallback={<ScreenLoadingSpinner />}>
-            <WritingList items={items} header="Writing" />
+            <WritingList items={items} header="Writing" />  
           </Suspense>
         </div>
       </div>
