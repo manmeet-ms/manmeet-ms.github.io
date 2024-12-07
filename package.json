@@ -28,6 +28,7 @@
     "@supabase/supabase-js": "^2.39.8",
     "@tailwindcss/container-queries": "^0.1.1",
     "@vercel/speed-insights": "^1.0.10",
+    "caniuse-lite": "^1.0.30001687",
     "class-variance-authority": "^0.7.0",
     "classix": "^2.1.36",
     "embla-carousel-react": "^8.1.3",
