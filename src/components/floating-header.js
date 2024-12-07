@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Balancer from 'react-wrap-balancer'
-import { ArrowLeftIcon, RadioIcon } from 'lucide-react'
+import { ArrowLeftIcon, GlassWater, GlassWaterIcon, RadioIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button.jsx'
 import { LoadingSpinner } from '@/components/loading-spinner'
@@ -84,17 +84,17 @@ export const FloatingHeader = memo(({ scrollTitle, title, goBackLink, bookmarks,
                   <span className="line-clamp-2 font-semibold tracking-tight">{title}</span>
                 </Balancer>
               )}
-              <div className="opacity-0 flex items-center gap-2">
+              <div className="flex items-center gap-2">
                 {(isWritingIndexPage || isBookmarksIndexPage) && (
                   <Button variant="outline" size="xs" asChild>
                     <a
-                      href={isWritingIndexPage ? '/writing.xml' : '/bookmarks.xml'}
-                      title="RSS feed"
+                      href="https://buymeacoffee.com/manmeets"
+                      title="Support"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <RadioIcon size={16} className="mr-2" />
-                      RSS feed
+                      {/* <GlassWaterIcon size={16} className="mr-2" /> */}
+                      Support
                     </a>
                   </Button>
                 )}

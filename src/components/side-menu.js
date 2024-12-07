@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic'
 import { useRouter, usePathname } from 'next/navigation'
-import { RadioIcon } from 'lucide-react'
+import { GlassWater, GlassWaterIcon, HeartIcon, MessageSquareHeartIcon, RadioIcon } from 'lucide-react'
 
 import { ScrollArea } from '@/components/scroll-area'
 import { Button } from '@/components/ui/button.jsx'
@@ -53,21 +53,22 @@ export const SideMenu = ({ children, title, bookmarks = [], isInner }) => {
           <div className="flex items-center justify-between">
             <span className="text-sm font-semibold tracking-tight">{title}</span>
             {/* <div className="flex items-center gap-2"> */}
-            <div className="hidden this_is_the_upper_one"> 
+            {/* <div className="hidden this_is_the_upper_one">  */}
+            <div className="this_is_the_upper_one"> 
               {(isWritingPath || isBookmarksPath) && (
                 <Button variant="outline" size="xs" asChild>
                   <a
-                    href={isWritingPath ? '/writing.xml' : '/bookmarks.xml'}
-                    title="RSS feed"
+                    href="https://buymeacoffee.com/manmeets "
+                    title="Support"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <RadioIcon size={16} className="mr-2" />
-                    RSS feed
+                    {/* <GlassWaterIcon  size={16}   className="mr-2" /> */}
+                    Support
                   </a>
                 </Button>
               )}
-              {isBookmarksPath && <SubmitBookmarkDialog bookmarks={bookmarks} currentBookmark={currentBookmark} />}
+              {/* {isBookmarksPath && <SubmitBookmarkDialog bookmarks={bookmarks} currentBookmark={currentBookmark} />} */}
             </div>
           </div>
         </div>

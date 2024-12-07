@@ -11,25 +11,25 @@ import { sortByProperty } from '@/lib/utils'
 export const revalidate = 60 * 60 * 24 * 2 // 2 days
 
 async function fetchData() {
-  // const bookmarks = await getBookmarks()
-  const bookmarks = [
-    {
-    slug:"https://manmeets.vercel.app/",
-    title:"Wordpress Websites",
-    count:8
-  },
-    {
-    slug:"https://manmeets.vercel.app/",
-    title:"User Interfaces",
-    count:8
-  },
-    {
-    slug:"https://manmeets.vercel.app/",
-    title:"Thumbnails",
-    count:8
-  },
+  const bookmarks = await getBookmarks()
+  // const bookmarks = [
+  //   {
+  //   slug:"https://manmeets.vercel.app/",
+  //   title:"Wordpress Websites",
+  //   count:8
+  // },
+  //   {
+  //   slug:"https://manmeets.vercel.app/",
+  //   title:"User Interfaces",
+  //   count:8
+  // },
+  //   {
+  //   slug:"https://manmeets.vercel.app/",
+  //   title:"Thumbnails",
+  //   count:8
+  // },
   
-  ]
+  // ]
   const sortedBookmarks = sortByProperty(bookmarks, 'title')
   return { bookmarks: sortedBookmarks }
 }
@@ -40,7 +40,7 @@ export default async function BookmarksLayout({ children }) {
   return (
     <>
       <div className="flex w-full">
-        <SideMenu title="Bookmarks" bookmarks={bookmarks} isInner>
+        <SideMenu title="Projects" bookmarks={bookmarks} isInner>
           <Suspense fallback={<ScreenLoadingSpinner />}>
             <div className="flex flex-col gap-1 text-sm">
         
