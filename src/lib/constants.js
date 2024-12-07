@@ -5,6 +5,7 @@ import {
   InfoIcon,
   InstagramIcon,
   LinkedinIcon,
+  MessageSquareIcon,
   NavigationIcon,
   Notebook,
   PencilLineIcon,
@@ -127,6 +128,11 @@ export const LINKS = [
     icon: <FolderTreeIcon size={16} />
   },
   {
+    href: '/testimonials',
+    label: 'Testimonials',
+    icon: <MessageSquareIcon size={16} />
+  },
+  {
     href: '/stack',
     label: 'Stack',
     icon: <Wand2Icon size={16} />
@@ -148,12 +154,31 @@ export const LINKS = [
 
 export const RESUME_ITEMS = [
 
+
   {
-    title: 'Name',
-    description: 'Manmeet Singh',
-    cateogory: ['Wordpress'],
+    title: 'Wordpress Website',
+    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
+    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
     url: 'RE'
-  }
+  },
+  {
+    title: 'Wordpress Website',
+    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
+    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
+    url: 'RE'
+  },
+  {
+    title: 'Wordpress Website',
+    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
+    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
+    url: 'RE'
+  },
+  {
+    title: 'Wordpress Website',
+    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
+    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
+    url: 'RE'
+  },
 ]
 export const WORKSPACE_ITEMS = [
 

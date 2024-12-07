@@ -34,24 +34,23 @@ export default async function Home() {
         <div className="content">
           <PageTitle title="Home" className="lg:hidden" />
           <p>
-            Hi 👋 I'm Manmeet Singh, an aspiring software engineer, Wordpress Developer, UI/X enthusiast, and minimalist based in
-            Delhi, India.
+            Hi 👋 I'm Manmeet Singh, an aspiring software engineer, Wordpress Developer, UI/X enthusiast, and minimalist
+            based in Delhi, India.
           </p>
           <p>
-            I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.
-          
-          {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
-
-           </p>
-          {/* <Button asChild variant="link" className="inline px-0">
-            <Link href="/writing">
-              <h2 className="mb-4 mt-8">Writing</h2>
+            I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with
+            their brands as a freelancer.
+            {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
+          </p>
+           <Button asChild variant="link" className="inline px-0">
+            <Link href="/projects">
+              <h2 className="mb-4 mt-8">Projects</h2>
             </Link>
           </Button>
-          <Suspense fallback={<ScreenLoadingSpinner />}>
+          {/*<Suspense fallback={<ScreenLoadingSpinner />}>
             <WritingList items={items} header="Writing" />  
           </Suspense> */}
-        <div className="mt-2 overflow-hidden rounded-lg border bg-white md:mt-8">
+          <div className="mt-2 overflow-hidden rounded-lg border bg-white md:mt-8">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -67,14 +66,18 @@ export default async function Home() {
                   return (
                     <TableRow key={`workspace-item-${itemIndex}`}>
                       <TableCell className="px-4 py-3 font-medium">
-<div className='flex flex-col' >
-<span>{item.title}</span>
-<span className='text-green-600' >{item.cateogory}</span>
-
-</div>
-
+                    {item.title}
                       </TableCell>
-                      <TableCell className="px-4 py-3">{item.description}</TableCell>
+                      <TableCell className="px-4 py-3">    <div className="flex flex-col">
+                          <span>{item.description}</span>
+                          <div className="flex flex-wrap gap-1 ">
+                            {item.cateogory.map((categoryItem) => (
+                              <span className="rounded-full mt-2 font-medium bg-green-100 px-3 py-0.5 text-xs text-green-600">
+                                {categoryItem}
+                              </span>
+                            ))}
+                          </div>
+                        </div></TableCell>
                       <TableCell className="px-4 py-3 font-medium">
                         <Link href={item.url}>{isExternal ? 'Visit' : 'Preview'}</Link>
                       </TableCell>
@@ -92,10 +95,9 @@ export default async function Home() {
                 >
                   some.wtf
                 </a>
-              </TableCaption>    
+              </TableCaption>
             </Table>
           </div>
-
         </div>
       </div>
     </ScrollArea>
