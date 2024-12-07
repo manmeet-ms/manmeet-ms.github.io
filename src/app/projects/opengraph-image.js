@@ -1,35 +1,30 @@
 import { ImageResponse } from 'next/og'
 
 import { OpenGraphImage } from '@/components/og-image'
-import { getBookmarks } from '@/lib/raindrop'
+import { getPageSeo } from '@/lib/contentful'
 import { getRegularFont, getBoldFont } from '@/lib/fonts'
 import { sharedMetadata } from '@/app/shared-metadata'
 
+export const alt = 'Journey'
 export const size = {
   width: sharedMetadata.ogImage.width,
   height: sharedMetadata.ogImage.height
 }
+export const contentType = sharedMetadata.ogImage.type
 
-export async function generateStaticParams() {
-  const bookmarks = await getBookmarks()
-  return bookmarks.map((bookmark) => ({ slug: bookmark.slug }))
-}
-
-export async function GET(_, { params }) {
-  const { slug } = params
-  const [bookmarks, regularFontData, boldFontData] = await Promise.all([
-    getBookmarks(),
+export default async function Image() {
+  const [seoData = {}, regularFontData, boldFontData] = await Promise.all([
+    getPageSeo('journey'),
     getRegularFont(),
     getBoldFont()
   ])
-  const currentBookmark = bookmarks.find((bookmark) => bookmark.slug === slug)
-  if (!currentBookmark) return null
+  const { seo: { title, description, ogImageTitle, ogImageSubtitle } = {} } = seoData
 
   return new ImageResponse(
     (
       <OpenGraphImage
-        title={currentBookmark.title}
-        description={`A curated selection of various handpicked ${currentBookmark.title.toLowerCase()} bookmarks by Manmeet Şuyalçınkaya`}
+        title={ogImageTitle || title}
+        description={ogImageSubtitle || description}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +37,10 @@ export async function GET(_, { params }) {
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            <polygon points="3 11 22 2 13 21 11 13 3 11" />
           </svg>
         }
-        url="bookmarks"
+        url="journey"
       />
     ),
     {

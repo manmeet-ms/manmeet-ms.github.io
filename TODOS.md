@@ -15,3 +15,7 @@ $$
 - just simple data rendering, no database as well
 - any of teh advanced things he's using 
 - darkmode feault mode switcher
+
+## improvement
+- OG sidebar on projects category and thn previerw on right
+-  

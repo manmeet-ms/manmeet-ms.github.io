@@ -23,6 +23,8 @@ export const getBookmarkItems = cache(async (id, pageIndex = 0) => {
         }),
       options
     )
+    console.log("Bokmarks response",response.json());
+    
     return await response.json()
   } catch (error) {
     console.info(error)
