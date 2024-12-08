@@ -101,10 +101,10 @@ export default function Testimonials() {
                             <div className="-m-12 flex flex-wrap">
                               <div className="flex  flex-col items-start p-12">
                                 <span className="inline-flex gap-1 items-center rounded bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" className='w-3 lucide lucide-star' viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  ><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className='w-3 ' viewBox="0 0 24 24" fill="currentColor" stroke="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"  ><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
                                   <span className="  font-medium">{items.ratings}</span>
                                 </span>
-                                <h2 className="mb-4 mt-4  text-2xl font-medium text-gray-900 sm:text-3xl">
+                                <h2 className="my-4  text-2xl font-medium text-gray-900 sm:text-3xl">
                                   {items.summary ? items.summary : null}
                                 </h2>
                                 <p className="mb-8 leading-relaxed">{items.comment}</p>
@@ -118,7 +118,7 @@ export default function Testimonials() {
                                       <img
                                         alt="flag"
                                         src={`https://flagsapi.com/${items.flag}/flat/64.png`}
-                                        className="h-4 w-4 border-none rounded flex-shrink-0 object-cover object-center"
+                                        className="size-4 border-none rounded shrink-0 object-cover object-center"
                                       />
                                       <span className="text-xs text-card-foreground/40">{items.country}</span>
                                     </div>

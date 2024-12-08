@@ -1,15 +1,13 @@
 import { Button } from '@/components/ui/button.jsx'
-import { Suspense } from 'react'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
-import { Link2Icon, PlusIcon } from 'lucide-react'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { ScrollArea } from '@/components/scroll-area'
-import { JourneyCard } from '@/components/journey-card'
 import { FloatingHeader } from '@/components/floating-header'
-import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
+import { GradientBg2 } from '@/components/gradient-bg'
 import { PageTitle } from '@/components/page-title'
-import { GradientBg, GradientBg2, GradientBg3, GradientBg4 } from '@/components/gradient-bg'
+import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
+import { ScrollArea } from '@/components/scroll-area'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { ProjectCard } from './project-card'
 
 export default async function Projects() {
@@ -81,7 +79,7 @@ export default async function Projects() {
       // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Medical Store',
+        excerpt: 'Medical Store',
       // note: 'Lorem note',
       description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
     },

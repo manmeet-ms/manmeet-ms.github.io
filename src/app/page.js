@@ -74,8 +74,8 @@ export default async function Home() {
                       <TableCell className="px-4 py-3">    <div className="flex flex-col">
                           <span>{item.description}</span>
                           <div className="flex flex-wrap gap-1 ">
-                            {item.cateogory.map((categoryItem) => (
-                              <span className="rounded-full mt-2 font-medium bg-primary/20 px-3 py-0.5 text-xs text-primary">
+                            {item.cateogory.map((categoryItem, idx) => (
+                              <span key={idx} className="rounded-full mt-2 font-medium bg-primary/20 px-3 py-0.5 text-xs text-primary">
                                 {categoryItem}
                               </span>
                             ))}

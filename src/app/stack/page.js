@@ -78,8 +78,8 @@ const stackItems=[
 
 <div className='flex flex-col items-stretch gap-12' >
 <ul className="mb-4 flex list-disc flex-col gap-0.5 pl-6">
-  {stackItems.map((item)=>(
-<li><div class="mb-4 leading-slacker last:mb-0 [&amp;:has(+ul)]:mb-1"><a href={item.link} target="_blank" rel="noopener noreferrer" className="link break-words after:content-['_↗']">{item.name}</a> — {item.description}</div></li>
+  {stackItems.map((item, index)=>(
+<li key={index} ><div className="mb-4 leading-slacker last:mb-0 [&amp;:has(+ul)]:mb-1"><a href={item.link} target="_blank" rel="noopener noreferrer" className="link break-words after:content-['_↗']">{item.name}</a> — {item.description}</div></li>
   ))}
   </ul>
   </div>
