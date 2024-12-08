@@ -4,9 +4,7 @@ import { PageTitle } from '@/components/page-title'
 import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
 import { ScrollArea } from '@/components/scroll-area'
 import { Masonry } from '@mui/lab'
-import { StarIcon } from 'lucide-react'
 import { Suspense } from 'react'
-import Balancer from 'react-wrap-balancer'
 
 const reviews = [
   {
@@ -98,31 +96,31 @@ export default function Testimonials() {
                   <Masonry columns={3} spacing={1}>
                     {reviews.map((items) => (
                       <>
-                        <section class="overflow-hidden bg-gray-100/30 border rounded-xl  text-gray-600">
-                          <div class="container mx-auto px-5 py-6">
-                            <div class="-m-12 flex flex-wrap">
-                              <div class="flex  flex-col items-start p-12">
-                                <span class="inline-flex gap-1 items-center rounded bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
+                        <section className="overflow-hidden bg-gray-100/30 border rounded-xl  text-gray-600">
+                          <div className="container mx-auto px-5 py-6">
+                            <div className="-m-12 flex flex-wrap">
+                              <div className="flex  flex-col items-start p-12">
+                                <span className="inline-flex gap-1 items-center rounded bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" className='w-3 lucide lucide-star' viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  ><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
                                   <span className="  font-medium">{items.ratings}</span>
                                 </span>
-                                <h2 class="mb-4 mt-4  text-2xl font-medium text-gray-900 sm:text-3xl">
+                                <h2 className="mb-4 mt-4  text-2xl font-medium text-gray-900 sm:text-3xl">
                                   {items.summary ? items.summary : null}
                                 </h2>
-                                <p class="mb-8 leading-relaxed">{items.comment}</p>
-                                <div class="mb-4 mt-auto flex w-full flex-wrap items-center border-b-2 border-gray-100 pb-4">
+                                <p className="mb-8 leading-relaxed">{items.comment}</p>
+                                <div className="mb-4 mt-auto flex w-full flex-wrap items-center border-b-2 border-gray-100 pb-4">
                                  
                                 </div>
-                                <a class="inline-flex items-center">
-                                  <span class="flex flex-grow flex-col  ">
-                                    <span class=" font-medium text-card-foreground">@{items.client}</span>
+                                <a className="inline-flex items-center">
+                                  <span className="flex flex-grow flex-col  ">
+                                    <span className=" font-medium text-card-foreground">@{items.client}</span>
                                     <div className="flex items-center gap-1">
                                       <img
                                         alt="flag"
                                         src={`https://flagsapi.com/${items.flag}/flat/64.png`}
-                                        class="h-4 w-4 border-none rounded flex-shrink-0 object-cover object-center"
+                                        className="h-4 w-4 border-none rounded flex-shrink-0 object-cover object-center"
                                       />
-                                      <span class="text-xs text-card-foreground/40">{items.country}</span>
+                                      <span className="text-xs text-card-foreground/40">{items.country}</span>
                                     </div>
                                   </span>
                                 </a>

@@ -9,7 +9,7 @@ import { PageTitle } from '@/components/page-title'
 import { GradientBg3 } from '@/components/gradient-bg'
  
 
-export default async function Journey() {
+export default async function About() {
 
   return (
     <ScrollArea useScrollAreaId>
