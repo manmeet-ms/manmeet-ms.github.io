@@ -93,7 +93,7 @@ export default function Testimonials() {
               <div className="container mx-auto px-5 py-12">
                 <div className="-mx-4 -my-8 flex flex-wrap">
                   
-                  <Masonry columns={3} spacing={1}>
+                  <Masonry columns={{ xs: 1, sm: 1, md: 3 }} spacing={1}>
                     {reviews.map((items) => (
                       <>
                         <section className="overflow-hidden bg-gray-100/30 border rounded-xl  text-gray-600">
