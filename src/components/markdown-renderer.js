@@ -1,7 +1,6 @@
 import Markdown from 'markdown-to-jsx'
 
 import { Link } from '@/components/link'
-import { TweetCard } from '@/components/tweet-card/tweet-card'
 
 export const MarkdownRenderer = ({ options, ...rest }) => {
   return (
@@ -27,7 +26,7 @@ export const MarkdownRenderer = ({ options, ...rest }) => {
               />
             </span>
           ),
-          tweet: ({ id }) => <TweetCard id={id} />
+          // tweet: ({ id }) => <TweetCard id={id} />
         }
       }}
       {...rest}

@@ -13,7 +13,7 @@
 $$ 
 - i wont use contenful 
 - just simple data rendering, no database as well
-- any of teh advanced things he's using 
+- none of teh advanced things yetnpx update-browserslist-db@latest
 - darkmode feault mode switcher
 
 ## improvement

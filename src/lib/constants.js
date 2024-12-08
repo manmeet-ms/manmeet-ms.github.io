@@ -122,7 +122,7 @@ export const LINKS = [
   //   label: 'About',
   //   icon: <InfoIcon size={16} />
   // },
-  {
+  { 
     href: '/projects',
     label: 'Projects',
     icon: <FolderTreeIcon size={16} />
@@ -179,6 +179,19 @@ export const RESUME_ITEMS = [
     cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
     url: 'RE'
   },
+  {
+    title: 'Wordpress Website',
+    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
+    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
+    url: 'RE'
+  },
+  {
+    title: 'Wordpress Website',
+    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
+    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
+    url: 'RE'
+  },
+
 ]
 export const WORKSPACE_ITEMS = [
 

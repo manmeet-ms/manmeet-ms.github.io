@@ -1,26 +1,25 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import { useRouter, usePathname } from 'next/navigation'
-import { GlassWater, GlassWaterIcon, HeartIcon, MessageSquareHeartIcon, RadioIcon } from 'lucide-react'
+import { usePathname, useRouter } from 'next/navigation'
 
+import { LoadingSpinner } from '@/components/loading-spinner'
 import { ScrollArea } from '@/components/scroll-area'
 import { Button } from '@/components/ui/button.jsx'
-import { LoadingSpinner } from '@/components/loading-spinner'
-const SubmitBookmarkDialog = dynamic(
-  () => import('@/components/submit-bookmark/dialog').then((mod) => mod.SubmitBookmarkDialog),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: false
-  }
-)
 import { useKeyPress } from '@/hooks/useKeyPress'
 import { cn } from '@/lib/utils'
+// const SubmitBookmarkDialog = dynamic(
+//   () => import('@/components/submit-bookmark/dialog').then((mod) => mod.SubmitBookmarkDialog),
+//   {
+//     loading: () => <LoadingSpinner />,
+//     ssr: false
+//   }
+// )
 
 const keyCodePathnameMapping = {
   Digit1: '/',
-  Digit2: '/about',
-  Digit3: '/projects',
+  Digit2: '/projects',
+  Digit3: '/testimonials',
   Digit4: '/stack',
   Digit5: '/journey',
   Digit6: '/workspace'
@@ -38,7 +37,8 @@ const keyCodePathnameMapping = {
 
 }
 
-export const SideMenu = ({ children, title, bookmarks = [], isInner }) => {
+export const SideMenu = ({ children, title, isInner }) => {
+// export const SideMenu = ({ children, title, bookmarks = [], isInner }) => {
   const router = useRouter()
   const pathname = usePathname()
   useKeyPress(onKeyPress, Object.keys(keyCodePathnameMapping))
@@ -50,8 +50,9 @@ export const SideMenu = ({ children, title, bookmarks = [], isInner }) => {
   }
 
   const isWritingPath = pathname.startsWith('/writing')
-  const isBookmarksPath = pathname.startsWith('/bookmarks')
-  const currentBookmark = bookmarks.find((bookmark) => `/bookmarks/${bookmark.slug}` === pathname)
+
+  // const isBookmarksPath = pathname.startsWith('/bookmarks')
+  // const currentBookmark = bookmarks.find((bookmark) => `/bookmarks/${bookmark.slug}` === pathname)
 
   return (
     <ScrollArea
@@ -67,8 +68,7 @@ export const SideMenu = ({ children, title, bookmarks = [], isInner }) => {
             {/* <div className="flex items-center gap-2"> */}
             {/* <div className="hidden this_is_the_upper_one">  */}
             <div className="this_is_the_upper_one"> 
-              {(isWritingPath || isBookmarksPath) && (
-                <Button variant="outline" size="xs" asChild>
+            <Button variant="outline" size="xs" asChild>
                   <a
                     href="https://buymeacoffee.com/manmeets "
                     title="Support"
@@ -79,7 +79,19 @@ export const SideMenu = ({ children, title, bookmarks = [], isInner }) => {
                     Support
                   </a>
                 </Button>
-              )}
+              {/* {(isWritingPath || isBookmarksPath) && (
+                <Button variant="outline" size="xs" asChild>
+                  <a
+                    href="https://buymeacoffee.com/manmeets "
+                    title="Support"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GlassWaterIcon  size={16}   className="mr-2" />  
+                    Support
+                  </a>
+                </Button>
+              )} */}
               {/* {isBookmarksPath && <SubmitBookmarkDialog bookmarks={bookmarks} currentBookmark={currentBookmark} />} */}
             </div>
           </div>

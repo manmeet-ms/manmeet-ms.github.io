@@ -7,7 +7,6 @@ import { FloatingHeader } from '@/components/floating-header'
 import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
 import { PageTitle } from '@/components/page-title'
 import {GradientBg, GradientBg2} from '@/components/gradient-bg'
-import { getAllLogbook, getPageSeo } from '@/lib/contentful'
 import { m } from 'framer-motion'
 
 export default async function Journey() {
@@ -90,28 +89,3 @@ const stackItems=[
     </ScrollArea>
   )
 }
-
-export async function generateMetadata() {
-  const seoData = await getPageSeo('journey')
-  if (!seoData) return null
-
-  const {
-    seo: { title, description }
-  } = seoData
-  const siteUrl = '/stack'
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      url: siteUrl
-    },
-    alternates: {
-      canonical: siteUrl
-    }
-  }
-}
-
-

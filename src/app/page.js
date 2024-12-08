@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table.jsx'
-import { getPageSeo } from '@/lib/contentful'
+// import { getPageSeo } from '@/lib/contentful'
 import { isExternalLink } from '@/lib/utils'
 import { RESUME_ITEMS } from '@/lib/constants'
 import { Suspense } from 'react'
@@ -9,13 +9,14 @@ import Link from 'next/link'
 
 import { ScrollArea } from '@/components/scroll-area'
 import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
-import { WritingList } from '@/components/writing-list'
+// import { WritingList } from '@/components/writing-list'
 import { FloatingHeader } from '@/components/floating-header'
 import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button.jsx'
-import { getAllPosts } from '@/lib/contentful'
-import { getSortedPosts, getItemsByYear } from '@/lib/utils'
+// import { getAllPosts } from '@/lib/contentful'
+// import { getSortedPosts, getItemsByYear } from '@/lib/utils'
 import { ChevronRight } from 'lucide-react'
+import { GradientBg2 } from '@/components/gradient-bg'
 
 // async function fetchData() {
 //   const allPosts = await getAllPosts()
@@ -39,7 +40,8 @@ export default async function Home() {
           </p>
           <p>
             I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with
-            their brands as a freelancer.
+            their brands as a freelancer. Below is an overview of my experience in the form of projects built and work using various technologies
+            
             {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
           </p>
            <Button asChild variant="link" className="inline px-0">
@@ -51,16 +53,17 @@ export default async function Home() {
             <WritingList items={items} header="Writing" />  
           </Suspense> */}
           <div className="mt-2 overflow-hidden rounded-lg border bg-white md:mt-8">
-            <Table>
+            <Table className="overflow-scroll w-full h-64 max-h-64" >
               <TableHeader>
                 <TableRow>
-                  <TableHead className="min-w-[300px] px-4">Project</TableHead>
+                  <TableHead className="min-w-[100px] md:min-w-[200px]  px-4">Project</TableHead>
                   <TableHead className="min-w-[300px] px-4">Description</TableHead>
                   <TableHead className="min-w-[70px] px-4 text-right"></TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {RESUME_ITEMS.map((item, itemIndex) => {
+                  
+              {RESUME_ITEMS.map((item, itemIndex) => {
                   const isExternal = isExternalLink(item.url)
 
                   return (
@@ -72,7 +75,7 @@ export default async function Home() {
                           <span>{item.description}</span>
                           <div className="flex flex-wrap gap-1 ">
                             {item.cateogory.map((categoryItem) => (
-                              <span className="rounded-full mt-2 font-medium bg-green-100 px-3 py-0.5 text-xs text-green-600">
+                              <span className="rounded-full mt-2 font-medium bg-primary/20 px-3 py-0.5 text-xs text-primary">
                                 {categoryItem}
                               </span>
                             ))}
@@ -85,7 +88,7 @@ export default async function Home() {
                   )
                 })}
               </TableBody>
-              <TableCaption className="py-3">
+              <TableCaption className="bg-primary/5 py-3">
                 For other cool stuff, check{' '}
                 <a
                   href="https://some.wtf"

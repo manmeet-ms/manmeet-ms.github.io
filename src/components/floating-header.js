@@ -10,13 +10,7 @@ import { ArrowLeftIcon, GlassWater, GlassWaterIcon, RadioIcon } from 'lucide-rea
 import { Button } from '@/components/ui/button.jsx'
 import { LoadingSpinner } from '@/components/loading-spinner'
 const MobileDrawer = dynamic(() => import('@/components/mobile-drawer').then((mod) => mod.MobileDrawer))
-const SubmitBookmarkDrawer = dynamic(
-  () => import('@/components/submit-bookmark/drawer').then((mod) => mod.SubmitBookmarkDrawer),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: false
-  }
-)
+
 import { SCROLL_AREA_ID, MOBILE_SCROLL_THRESHOLD } from '@/lib/constants'
 
 export const FloatingHeader = memo(({ scrollTitle, title, goBackLink, bookmarks, currentBookmark, children }) => {
@@ -24,8 +18,6 @@ export const FloatingHeader = memo(({ scrollTitle, title, goBackLink, bookmarks,
   const pathname = usePathname()
   const isWritingIndexPage = pathname === '/writing'
   const isWritingPath = pathname.startsWith('/writing')
-  const isBookmarksIndexPage = pathname === '/bookmarks'
-  const isBookmarkPath = pathname.startsWith('/bookmarks')
 
   useEffect(() => {
     const scrollAreaElem = document.querySelector(`#${SCROLL_AREA_ID}`)
@@ -85,20 +77,16 @@ export const FloatingHeader = memo(({ scrollTitle, title, goBackLink, bookmarks,
                 </Balancer>
               )}
               <div className="flex items-center gap-2">
-                {(isWritingIndexPage || isBookmarksIndexPage) && (
-                  <Button variant="outline" size="xs" asChild>
+              <Button variant="outline" size="xs" asChild>
                     <a
                       href="https://buymeacoffee.com/manmeets"
                       title="Support"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {/* <GlassWaterIcon size={16} className="mr-2" /> */}
                       Support
                     </a>
                   </Button>
-                )}
-                {isBookmarkPath && <SubmitBookmarkDrawer bookmarks={bookmarks} currentBookmark={currentBookmark} />}
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ import { FloatingHeader } from '@/components/floating-header'
 import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
 import { PageTitle } from '@/components/page-title'
 import { GradientBg, GradientBg2, GradientBg3, GradientBg4 } from '@/components/gradient-bg'
-import { getAllLogbook, getPageSeo } from '@/lib/contentful'
+
 
 export default async function Projects() {
   const ui_projectCategories = [
@@ -507,25 +507,3 @@ export default async function Projects() {
   )
 }
 
-export async function generateMetadata() {
-  const seoData = await getPageSeo('projects')
-  if (!seoData) return null
-
-  const {
-    seo: { title, description }
-  } = seoData
-  const siteUrl = '/projects'
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      url: siteUrl
-    },
-    alternates: {
-      canonical: siteUrl
-    }
-  }
-}

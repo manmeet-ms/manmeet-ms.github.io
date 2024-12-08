@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 
-import { useViewData } from '@/hooks/useViewData'
+// import { useViewData } from '@/hooks/useViewData'
 import { cn, dateWithDayAndMonthFormatter, dateWithMonthAndYearFormatter, viewCountFormatter } from '@/lib/utils'
 
 export const WritingList = ({ items }) => {
