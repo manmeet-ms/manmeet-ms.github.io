@@ -199,7 +199,42 @@ export const WORKSPACE_ITEMS = [
     title: 'IKEA Övning Footrest',
     url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
     specs: 'Gray/Blue'
-  }
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
+  {
+    title: 'IKEA Övning Footrest',
+    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
+    specs: 'Gray/Blue'
+  },
 ]
 
 export const SCROLL_AREA_ID = 'scroll-area'

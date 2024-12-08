@@ -1,169 +1,216 @@
-import { Button } from '@/components/ui/button.jsx'
-import Link from 'next/link'
-import { Suspense } from 'react'
-
 import { FloatingHeader } from '@/components/floating-header'
 import { GradientBg2 } from '@/components/gradient-bg'
 import { PageTitle } from '@/components/page-title'
-import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
 import { ScrollArea } from '@/components/scroll-area'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { ProjectCard } from './project-card'
+import { Button } from '@/components/ui/button'
+import { Download, DownloadIcon } from 'lucide-react'
 
 export default async function Projects() {
   const web_projectCategories = [
-    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
     {
-      title: 'wp VoDScEe',
+      title: 'MistWrite',
       link: '#',
+      tags: ['Frontend UI', 'React'],
       cover: 'https://placehold.co/600x400',
-      domain: 'Lorem domain',
-      excerpt: 'Lorem excert',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      domain: 'manmeets.vercel.app',
+      excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
     },
+
     {
-      title: 'wp VoDScEe',
-      link: '#',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Lorem domain',
-      excerpt: 'Lorem excert',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
-    }
+        title: 'Frontend Mentor solutions',
+        link: '#',
+        tags: ['Frontend UI', 'React'],
+        cover: 'https://placehold.co/600x400',
+        domain: 'manmeets.vercel.app',
+        excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+      },
+    // {
+    //   title: 'NFT Marketplace Dashboard',
+    //   link: '#',
+    //   tags: ['Frontend UI', 'React'],
+    //   cover: 'https://placehold.co/600x400',
+    //   domain: 'manmeets.vercel.app',
+    //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+    // },
+    // {
+    //     title: 'RPG Level Up UI',
+    //     link: '#',
+    //     tags: ['Frontend UI', 'React'],
+    //     cover: 'https://placehold.co/600x400',
+    //     domain: 'manmeets.vercel.app',
+    //     excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+    //   },
+    // {
+    //   title: 'Currency converter',
+    //   link: '#',
+    //   tags: ['Frontend UI', 'React'],
+    //   cover: 'https://placehold.co/600x400',
+    //   domain: 'manmeets.vercel.app',
+    //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+    // },
+    
+    // {
+    //   title: 'Productivity Dashboard',
+    //   link: '#',
+    //   tags: ['Frontend UI', 'React'],
+    //   cover: 'https://placehold.co/600x400',
+    //   domain: 'manmeets.vercel.app',
+    //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+    // },
+    
+
+    // {
+    //   title: 'Quotes API PWA Notifications',
+    //   link: '#',
+    //   tags: ['Frontend UI', 'React'],
+    //   cover: 'https://placehold.co/600x400',
+    //   domain: 'manmeets.vercel.app',
+    //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+    // }
   ]
+
   const wp_projectCategories = [
     {
       title: 'ImpactHQ',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Business',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Business site - A robust platform tailored for impactful business workflows and collaborations.'
     },
-
-    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
     {
       title: 'Shopphoria',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'E-commerce',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'E-commerce site - Streamlined solutions for modern e-commerce needs with an intuitive design.'
     },
-
     {
       title: 'DevDiary',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Personal Portfolio',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Personal Portfolio site - Your ultimate companion for showcasing projects and professional growth.'
     },
-
     {
       title: 'LeadGen',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Marketing Agency',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Marketing Agency site - Innovative tools to generate leads and manage marketing campaigns effectively.'
     },
-
     {
       title: 'RxReady',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-        excerpt: 'Medical Store',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Medical Store site - Custom solutions for managing medical inventories and appointments.'
     },
-
     {
       title: 'Newsreader',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'News',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'News site - A clean and responsive theme designed for delivering breaking news effortlessly.'
     },
-
     {
       title: 'RiskRadar',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Finance Consultancy',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Finance Consultancy site - A sleek framework for risk management and financial consulting firms.'
     },
-
     {
       title: 'Labofy',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Medical store/Appointment booking',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Healthcare site - Advanced solutions for laboratory management and patient booking systems.'
     },
-
     {
       title: 'JethiTech',
-      // link: '#',
       cover: 'https://placehold.co/600x400',
       domain: 'Screenshots',
-      excerpt: 'Agency/Consulting',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      excerpt: 'Agency/Consulting site - An all-in-one suite for agencies to manage clients and projects seamlessly.'
     }
   ]
+
   const ui_projectCategories = [
-    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
+
+
+
+
     {
-      title: 'wp VoDScEe',
+      title: '    Payment App',
       link: '#',
+      tags: ['Frontend UI', 'React'],
       cover: 'https://placehold.co/600x400',
-      domain: 'Lorem domain',
-      excerpt: 'Lorem excert',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
     },
     {
-      title: 'wp VoDScEe',
+      title: 'Skill-up platform',
       link: '#',
+      tags: ['Frontend UI', 'React'],
       cover: 'https://placehold.co/600x400',
-      domain: 'Lorem domain',
-      excerpt: 'Lorem excert',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
+    },
+    {
+      title: 'Expense Tracking App',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
+    },
+    {
+      title: 'Inventory Management Dashboard',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'A modern workspace for building and testing prototypes with real-world interactions.'
     }
   ]
+
   const other_projectCategories = [
-    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
+
+
+
+
+
     {
-      title: 'wp VoDScEe',
+      title: 'Logo Designs',
       link: '#',
+      tags: ['Frontend UI', 'React'],
       cover: 'https://placehold.co/600x400',
-      domain: 'Lorem domain',
-      excerpt: 'Lorem excert',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
     },
     {
-      title: 'wp VoDScEe',
+      title: 'Discord servers',
       link: '#',
+      tags: ['Frontend UI', 'React'],
       cover: 'https://placehold.co/600x400',
-      domain: 'Lorem domain',
-      excerpt: 'Lorem excert',
-      // note: 'Lorem note',
-      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+    },
+    {
+      title: 'Gig Thumbnails',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+    },
+    {
+      title: 'Social Media post designs',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+    },
+    {
+      title: 'Personal Portfolio',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'A collection of indispensable utilities for day-to-day productivity.'
     }
   ]
 
@@ -173,131 +220,146 @@ export default async function Projects() {
       <FloatingHeader scrollTitle="Stack" />
       <div className="content-wrapper">
         <div className="content">
+          <div className='flex items-start justify-between' >
           <PageTitle title="Projects" />
+<Button className="inline-flex gap-2 items-center justify-center" >
+    <DownloadIcon  size={14} strokeWidth={3} />
+    Resume
+</Button>
+          </div>
           Projects made so far
+          Projects by Manmeet Singh ( @manmeet-ms ).
+Explore the categorized content below or use the  above for all demos and mockups.
+Click the  next to each project to view live projects.
           <div>
-            <Button asChild variant="link" className="inline px-0">
-              <Link href="#">
-                <h2 className="mb-4 mt-8">Web Projects</h2>
-              </Link>
-            </Button>
-            <Suspense fallback={<ScreenLoadingSpinner />}>
-              <div className="flex flex-col items-stretch gap-12">
-                <Carousel>
-                  <CarouselContent>
-                    {web_projectCategories.map((project, index) => (
-                      <>
-                        <CarouselItem key={index} className="basis-1/2">
-                          <ProjectCard
-                            link={project.link}
-                            cover={project.cover}
-                            title={project.title}
-                            domain={project.domain}
-                            excerpt={project.excerpt}
-                            note={project.note}
-                          />
-                        </CarouselItem>
-                      </>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </Carousel>
+            <section className="body-font py-12 text-gray-600">
+              <div className="container mx-auto ">
+                <div className="mb-4 flex w-full flex-wrap">
+                  <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
+                    <h1 className="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">Web Projects</h1>
+                    <div className="h-1 w-20 rounded bg-primary "></div>
+                  </div>
+                  <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">
+                    Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                    farm-to-table
+                  </p>
+                </div>
+                <div className="-m-4 flex flex-wrap">
+                  {web_projectCategories.map((project, index) => (
+                    <>
+                      <ProjectCard
+                        key={index}
+                        link={project.link}
+                        cover={project.cover}
+                        title={project.title}
+                        tags={project.tags}
+                        domain={project.domain}
+                        excerpt={project.excerpt}
+                        note={project.note}
+                      />
+                    </>
+                  ))}
+                </div>
               </div>
-            </Suspense>
+            </section>
           </div>
           <div>
-            <Button asChild variant="link" className="inline px-0">
-              <Link href="#">
-                <h2 className="mb-4 mt-8">Wordpress Websites</h2>
-              </Link>
-            </Button>
-            <Suspense fallback={<ScreenLoadingSpinner />}>
-              <div className="flex flex-col items-stretch gap-12">
-                <Carousel>
-                  <CarouselContent>
-                    {wp_projectCategories.map((project, index) => (
-                      <>
-                        <CarouselItem key={index} className="basis-1/2">
-                          <ProjectCard
-                            link={project.link}
-                            cover={project.cover}
-                            title={project.title}
-                            domain={project.domain}
-                            excerpt={project.excerpt}
-                            note={project.note}
-                          />
-                        </CarouselItem>
-                      </>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </Carousel>
+            <section className="body-font py-12 text-gray-600">
+              <div className="container mx-auto ">
+                <div className="mb-4 flex w-full flex-wrap">
+                  <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
+                    <h1 className="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">WordPress Sites</h1>
+                    <div className="h-1 w-20 rounded bg-primary "></div>
+                  </div>
+                  <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">
+                    Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                    farm-to-table
+                  </p>
+                </div>
+                <div className="-m-4 flex flex-wrap">
+                  {wp_projectCategories.map((project, index) => (
+                    <>
+                      <ProjectCard
+                        key={index}
+                        link={project.link}
+                        cover={project.cover}
+                        title={project.title}
+                        tags={project.tags}
+                        domain={project.domain}
+                        excerpt={project.excerpt}
+                        note={project.note}
+                      />
+                    </>
+                  ))}
+                </div>
               </div>
-            </Suspense>
+            </section>
           </div>
           <div>
-            <Button asChild variant="link" className="inline px-0">
-              <Link href="#">
-                <h2 className="mb-4 mt-8">User Interfaces</h2>
-              </Link>
-            </Button>
-            <Suspense fallback={<ScreenLoadingSpinner />}>
-              <div className="flex flex-col items-stretch gap-12">
-                <Carousel>
-                  <CarouselContent>
-                    {ui_projectCategories.map((project, index) => (
-                      <>
-                        <CarouselItem key={index} className="basis-1/2">
-                          <ProjectCard
-                            link={project.link}
-                            cover={project.cover}
-                            title={project.title}
-                            domain={project.domain}
-                            excerpt={project.excerpt}
-                            note={project.note}
-                          />
-                        </CarouselItem>
-                      </>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </Carousel>
+            <section className="body-font py-12 text-gray-600">
+              <div className="container mx-auto ">
+                <div className="mb-4 flex w-full flex-wrap">
+                  <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
+                    <h1 className="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">
+                      User Interface Designs
+                    </h1>
+                    <div className="h-1 w-20 rounded bg-primary "></div>
+                  </div>
+                  <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">
+                    Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                    farm-to-table
+                  </p>
+                </div>
+                <div className="-m-4 flex flex-wrap">
+                  {ui_projectCategories.map((project, index) => (
+                    <>
+                      <ProjectCard
+                        key={index}
+                        link={project.link}
+                        cover={project.cover}
+                        title={project.title}
+                        tags={project.tags}
+                        domain={project.domain}
+                        excerpt={project.excerpt}
+                        note={project.note}
+                      />
+                    </>
+                  ))}
+                </div>
               </div>
-            </Suspense>
+            </section>
           </div>
           <div>
-            <Button asChild variant="link" className="inline px-0">
-              <Link href="#">
-                <h2 className="mb-4 mt-8">Others</h2>
-              </Link>
-            </Button>
-            <Suspense fallback={<ScreenLoadingSpinner />}>
-              <div className="flex flex-col items-stretch gap-12">
-                <Carousel>
-                  <CarouselContent>
-                    {other_projectCategories.map((project, index) => (
-                      <>
-                        <CarouselItem key={index} className="basis-1/2">
-                          <ProjectCard
-                            link={project.link}
-                            cover={project.cover}
-                            title={project.title}
-                            domain={project.domain}
-                            excerpt={project.excerpt}
-                            note={project.note}
-                          />
-                        </CarouselItem>
-                      </>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </Carousel>
+            <section className="body-font py-12 text-gray-600">
+              <div className="container mx-auto ">
+                <div className="mb-4 flex w-full flex-wrap">
+                  <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
+                    <h1 className="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">Others</h1>
+                    <div className="h-1 w-20 rounded bg-primary "></div>
+                  </div>
+                  <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">
+                    Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                    farm-to-table
+                  </p>
+                </div>
+                <div className="-m-4 flex flex-wrap">
+                  {other_projectCategories.map((project, index) => (
+                    <>
+                      <ProjectCard
+                        key={index}
+                        link={project.link}
+                        cover={project.cover}
+                        title={project.title}
+                        tags={project.tags}
+                        domain={project.domain}
+                        excerpt={project.excerpt}
+                        note={project.note}
+                      />
+                    </>
+                  ))}
+                </div>
               </div>
-            </Suspense>
+            </section>
           </div>
         </div>
       </div>
