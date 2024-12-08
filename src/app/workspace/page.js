@@ -41,7 +41,7 @@ export default async function Workspace() {
                   )
                 })}
               </TableBody>
-              <TableCaption className="py-3">
+              <TableCaption className=" bg-primary/5 py-3">
                 For other cool stuff, check{' '}
                 <a
                   href="https://some.wtf"
@@ -59,7 +59,7 @@ export default async function Workspace() {
             <Image
               src="/assets/workspace.avif"
               alt="Workspace"
-              className="w-full object-cover"
+              className="mt-2 w-full object-cover"
               width={766}
               height={901}
               loading="eager"

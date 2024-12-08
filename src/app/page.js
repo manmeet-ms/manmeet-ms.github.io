@@ -65,6 +65,7 @@ export default async function Home() {
           {/*<Suspense fallback={<ScreenLoadingSpinner />}>
             <WritingList items={items} header="Writing" />  
           </Suspense> */}
+          Laest updates and featured projects will be listd here 
           <div className="mt-2 overflow-hidden rounded-lg border bg-white md:mt-8">
             <Table className="h-64 max-h-64 w-full overflow-scroll">
               <TableHeader>
@@ -82,11 +83,11 @@ export default async function Home() {
                     <TableRow key={`workspace-item-${itemIndex}`}>
                       <TableCell className="px-4 py-3 font-medium">{item.title}</TableCell>
                       <TableCell className="px-4 py-3">
-                        {' '}
+                        
                         <div className="flex flex-col">
                           <span>{item.description}</span>
                           <div className="flex flex-wrap gap-1 ">
-                            {item.cateogory.map((categoryItem, idx) => (
+                            {item.tags.map((categoryItem, idx) => (
                               <span
                                 key={idx}
                                 className="mt-2 rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary"
@@ -105,7 +106,7 @@ export default async function Home() {
                 })}
               </TableBody>
               <TableCaption className="bg-primary/5 py-3">
-                For other cool stuff, check{' '}
+                For other cool stuff, check
                 <a
                   href="https://some.wtf"
                   className="link break-words after:content-['_↗']"

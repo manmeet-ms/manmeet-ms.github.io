@@ -14,7 +14,6 @@ import {
 } from 'lucide-react'
 
 export const PROFILES = {
-
   github: {
     title: 'GitHub',
     url: 'https://github.com/manmeet-ms',
@@ -56,8 +55,8 @@ export const PROFILES = {
         <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
       </svg>
     )
-  },
- 
+  }
+
   // medium: {
   //   title: 'Medium',
   //   url: 'https://suyalcinkaya.medium.com'
@@ -75,7 +74,7 @@ export const PROFILES = {
   //   title: 'Bluesky',
   //   url: 'https://staging.bsky.app/profile/manmeets.vercel.app'
   // },
-  
+
   // pinterest: {
   //   title: 'Pinterest',
   //   url: 'https://nl.pinterest.com/onurschu'
@@ -111,7 +110,7 @@ export const LINKS = [
   //   label: 'About',
   //   icon: <Notebook size={16} />
   // },
-  
+
   // {
   //   href: '/writing',
   //   label: 'Writing',
@@ -122,7 +121,7 @@ export const LINKS = [
   //   label: 'About',
   //   icon: <InfoIcon size={16} />
   // },
-  { 
+  {
     href: '/projects',
     label: 'Projects',
     icon: <FolderTreeIcon size={16} />
@@ -137,7 +136,7 @@ export const LINKS = [
     label: 'Stack',
     icon: <Wand2Icon size={16} />
   },
-  
+
   {
     href: '/journey',
     label: 'Journey',
@@ -147,54 +146,37 @@ export const LINKS = [
     href: '/workspace',
     label: 'Workspace',
     icon: <ArmchairIcon size={16} />
-  }, // used as about page
- 
-
+  } // used as about page
 ]
 
 export const RESUME_ITEMS = [
-
-
   {
-    title: 'Wordpress Website',
-    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
-    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
-    url: 'RE'
-  },
-  {
-    title: 'Wordpress Website',
-    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
-    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
-    url: 'RE'
-  },
-  {
-    title: 'Wordpress Website',
-    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
-    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
-    url: 'RE'
-  },
-  {
-    title: 'Wordpress Website',
-    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
-    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
-    url: 'RE'
-  },
-  {
-    title: 'Wordpress Website',
-    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
-    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
-    url: 'RE'
-  },
-  {
-    title: 'Wordpress Website',
-    description: 'I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with their brands as a freelancer.',
-    cateogory: ['Wordpress', 'Wordpress', 'Wordpress', 'Wordpress'],
-    url: 'RE'
+    title: 'MistWrite',
+    description: 'A curated collection of tools for efficient coding and debugging workflows.',
+    tags: ['Frontend UI', 'React'],
+    url: 'https://www.example.com'
   },
 
+  {
+    title: 'Frontend Mentor solutions',
+    description: 'Optimized setups for seamless browsing and developer tool integration.',
+    tags: ['Frontend UI', 'React'],
+    url: 'https://www.example.com'
+  },
+  {
+    title: 'Personal Portfolio',
+    description: 'A collection of indispensable utilities for day-to-day productivity.',
+    tags: ['Frontend UI', 'React'],
+    url: '#'
+  },
+  {
+    title: 'Discord servers',
+    description: 'Essential utilities for photographers to organize and enhance their workflows.',
+    tags: ['Frontend UI', 'React'],
+    url: 'https://www.example.com'
+  }
 ]
 export const WORKSPACE_ITEMS = [
-
   {
     title: 'IKEA Övning Footrest',
     url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
@@ -234,7 +216,7 @@ export const WORKSPACE_ITEMS = [
     title: 'IKEA Övning Footrest',
     url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
     specs: 'Gray/Blue'
-  },
+  }
 ]
 
 export const SCROLL_AREA_ID = 'scroll-area'
