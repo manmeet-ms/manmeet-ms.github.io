@@ -14,6 +14,8 @@
     --sh-comment: #a19595;
     --background: 0 0% 100%;
     --foreground: 0 0% 5%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
 
     --card: 0 0% 99%;
     --card-foreground: 0 0% 5%;
@@ -21,7 +23,7 @@
     --popover: 0 0% 99%;
     --popover-foreground: 0 0% 5%;
 
-    --primary: 142 72% 29%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 95%;
@@ -40,35 +42,37 @@
     --input: 0 0% 84%;
     --ring: 0 0% 76%;
 
-    .dark {
-      --background: 140 7% 8%;
-      --foreground: 180 9% 98%;
+    --radius: 0.5rem;
+  }
   
-      --card: 140 6% 10%;
-      --card-foreground: 180 9% 98%;
-  
-      --popover: 140 6% 10%;
-      --popover-foreground: 180 9% 98%;
-  
-      --primary: 142 71% 45%;
-      --primary-foreground: 120 9% 2%;
-  
-      --secondary: 142 8% 19%;
-      --secondary-foreground: 180 9% 98%;
-  
-      --muted: 142 7% 29%;
-      --muted-foreground: 141 8% 49%;
-  
-      --accent: 142 71% 19%;
-      --accent-foreground: 180 9% 98%;
-  
-      --destructive: 0 84% 60%;
-      --destructive-foreground: 0 0% 98%;
-  
-      --border: 144 8% 12%;
-      --input: 143 9% 18%;
-      --ring: 142 71% 40%;
-    }
+  .dark {
+    --background: 220 7% 8%;
+    --foreground: 180 9% 98%;
+
+    --card: 220 6% 10%;
+    --card-foreground: 180 9% 98%;
+
+    --popover: 220 6% 10%;
+    --popover-foreground: 180 9% 98%;
+
+    --primary: 213 94% 68%;
+    --primary-foreground: 240 9% 2%;
+
+    --secondary: 210 8% 19%;
+    --secondary-foreground: 180 9% 98%;
+
+    --muted: 213 7% 29%;
+    --muted-foreground: 213 8% 49%;
+
+    --accent: 213 71% 19%;
+    --accent-foreground: 180 9% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 216 8% 12%;
+    --input: 210 9% 18%;
+    --ring: 213 94% 40%;
   }
 
   ::selection {
@@ -218,7 +222,7 @@
   }
 
   .link {
-    @apply text-blue-600 hover:underline hover:underline-offset-4;
+    @apply text-primary hover:underline hover:underline-offset-4;
   }
 
   .inline-code {

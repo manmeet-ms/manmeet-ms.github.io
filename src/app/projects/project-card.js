@@ -6,12 +6,12 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
       <div className="w-full p-4 md:w-1/2 ">
         <a
           // className="   flex aspect-auto min-w-0 cursor-pointer flex-col gap-4 overflow-hidden rounded-xl bg-white p-4 transition-colors duration-300 hover:bg-gray-50"
-          href={`${link || 'default'}?ref=manmeets.vercel.app`}
+          href={`${link}?ref=manmeets.vercel.app`}
           target="_blank"
           rel="noopener noreferrer"
           // data-item-order={order}
         >
-          <div className="rounded-lg bg-gray-100 p-4">
+          <div className="rounded-lg  p-4 shadow-md">
             <img className="mb-4 h-40 w-full rounded object-cover object-center" src={cover} alt={title} />
             <h3 className="inline-flex items-center gap-1 text-xs font-medium tracking-normal text-primary">
               {link ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.5} />}

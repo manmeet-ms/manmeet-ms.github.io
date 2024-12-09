@@ -151,7 +151,7 @@ export const LINKS = [
 
 export const WEB_ProjectCategories = [
   {
-    title: 'MistWrite',
+    title: 'Mistwrite',
     link: '#',
     tags: ['Frontend UI', 'React'],
     cover: 'https://placehold.co/600x400',
@@ -365,16 +365,34 @@ export const OTHER_ProjectCategories = [
 ]
 
 export const FEATURED_ProjectTable_Home = [
-  WEB_ProjectCategories[0],
-  WEB_ProjectCategories[1],
   {
-    title: 'WordPress Websites',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-  }
+    title: 'Mistwrite',
+    excerpt: 'I recently made this utility to provide quick, clutter-free temporary note-taking.',
+    url: 'https://mistwrite.vercel.app/'
+  },
+
+  {
+    title: 'WordPress Sites',
+    excerpt: 'Showcases versatile, user-friendly WordPress sites tailored for various needs.',
+    url: '/projects#wordpress'
+  },
+
+  {
+    title: 'Discord Servers',
+    excerpt: 'Servers I setup for my freelance clients, keeping aesthetics and funtionality in mind.',
+    url: '/projects#others'
+  },
+
+  // {
+  //   title: 'Frontend Mentor Solutions',
+  //   excerpt: 'Started back in 2019, will be resumed soon, contains solutions to frontend projects at the platform.',
+  //   url: 'https://fms-projects.vercel.app/'
+  // ,},  
+  {
+    title: 'Thumbnails & Posts for my Social Media',
+    excerpt: 'I also design posts, thumbnails and other graphic art as per needs for my gigs and Instagram posts.',
+    url: '/projects#others'
+  },
   // {
   //   title: 'Personal Portfolio',
   //   description: 'A collection of indispensable utilities for day-to-day productivity.',
@@ -431,7 +449,7 @@ export const WORKSPACE_ITEMS = [
     title: 'Cable Management Box ',
     specs: 'Keeps cables organized and hidden neatly. Also works as an extension to my devices',
     url: 'https://amzn.to/41ryTEA'
-  },
+  }
   // {
   //   title: 'Data Cable Organizer and Storage Box',
   //   specs: 'Gray/Blue',
@@ -445,7 +463,7 @@ export const MOBILE_SCROLL_THRESHOLD = 20
 
 // export const SUBMIT_BOOKMARK_FORM_TITLE = 'Submit a bookmark'
 // export const SUBMIT_BOOKMARK_FORM_DESCRIPTION =
-  // "Send me a website you like and if I like it too, you'll see it in the bookmarks list. With respect, please do not submit more than 5 websites a day."
+// "Send me a website you like and if I like it too, you'll see it in the bookmarks list. With respect, please do not submit more than 5 websites a day."
 // export const MAX_BOOKMARK_SUBMISSIONS_PER_DAY = 5
 // export const BOOKMARK_SUBMISSION_COUNT_COOKIE_NAME = 'formSubmissionCount'
 

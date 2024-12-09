@@ -1,4 +1,3 @@
-
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table.jsx'
 // import { getPageSeo } from '@/lib/contentful'
 import { FEATURED_ProjectTable_Home } from '@/lib/constants'
@@ -12,7 +11,7 @@ import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button.jsx'
 // import { getAllPosts } from '@/lib/contentful'
 // import { getSortedPosts, getItemsByYear } from '@/lib/utils'
-import { DotIcon } from 'lucide-react'
+import { Asterisk, AsteriskIcon, DotIcon, LocateIcon } from 'lucide-react'
 
 // async function fetchData() {
 //   const allPosts = await getAllPosts()
@@ -40,15 +39,17 @@ export default async function Home() {
             using various technologies
             {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
           </p>
-
-          <div className="container flex w-full items-center justify-center gap-6 text-muted-foreground/30">
-            <DotIcon /> <DotIcon /> <DotIcon />
+          <div className="container py-2 flex w-full items-center justify-center gap-6 text-muted-foreground/30">
+            <AsteriskIcon/>
+            {/* <AsteriskIcon/>
+            <AsteriskIcon/> */}
+            {/* <DotIcon /> <DotIcon /> <DotIcon /> */}
           </div>
-            <Button asChild variant="link" className="inline px-0">
-              <Link href="/projects">
-                <h2>Projects</h2>
-              </Link>
-            </Button>
+          <Button asChild variant="link" className="inline px-0">
+            <a href="/projects">
+              <h2>Projects</h2>
+            </a>
+          </Button>
           {/* <div className="mb-4  mt-8 flex items-center justify-between">
             <Link href="/projects">
             <Button variant="ghost" className="inline-flex items-center justify-center gap-2">
@@ -61,12 +62,12 @@ export default async function Home() {
           {/*<Suspense fallback={<ScreenLoadingSpinner />}>
             <WritingList items={items} header="Writing" />  
           </Suspense> */}
-          Laest updates and featured projects will be listd here 
+          Laest updates and featured projects will be listd here
           <div className="mt-2 overflow-hidden rounded-lg border bg-white md:mt-8">
             <Table className="h-64 max-h-64 w-full overflow-scroll">
               <TableHeader>
                 <TableRow>
-                  <TableHead className="min-w-[100px] px-4  md:min-w-[200px]">Project</TableHead>
+                  <TableHead className="min-w-[100px] px-4 ">Project</TableHead>
                   <TableHead className="min-w-[300px] px-4">Description</TableHead>
                   <TableHead className="min-w-[70px] px-4 text-right"></TableHead>
                 </TableRow>
@@ -79,10 +80,9 @@ export default async function Home() {
                     <TableRow key={`workspace-item-${itemIndex}`}>
                       <TableCell className="px-4 py-3 font-medium">{item.title}</TableCell>
                       <TableCell className="px-4 py-3">
-                        
                         <div className="flex flex-col">
                           <span>{item.excerpt}</span>
-                          <div className="flex flex-wrap gap-1 ">
+                          {/* <div className="flex flex-wrap gap-1 ">
                             {item.tags?(item.tags.map((tag, idx) => (
                               <span
                                 key={idx}
@@ -91,26 +91,26 @@ export default async function Home() {
                                 {tag}
                               </span>
                             ))):null}
-                          </div>
+                          </div> */}
                         </div>
                       </TableCell>
                       <TableCell className="px-4 py-3 font-medium">
-                        <Link href={item.link}>{isExternal ? 'Visit' : 'Preview'}</Link>
+                        <Link className='text-primary' href={item.url}>{isExternal ? 'Visit' : 'View'}</Link>
                       </TableCell>
                     </TableRow>
                   )
                 })}
               </TableBody>
               <TableCaption className="bg-primary/5 py-3">
-                For other cool stuff, check
-                <a
-                  href="https://some.wtf"
+                View categorized projects list
+                <Link
+                  href="/projects"
                   className="link break-words after:content-['_↗']"
-                  target="_blank"
+
                   rel="noopener noreferrer"
                 >
-                  some.wtf
-                </a>
+                  &nbsp;here
+                </Link>
               </TableCaption>
             </Table>
           </div>

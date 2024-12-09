@@ -80,7 +80,7 @@ export default function Testimonials() {
         <div className="content">
           <PageTitle title="Testimonials" />
           <p> 
-          Verify teh authenticity of reviews <a className="text-primary after:content-['_↗']" href="">here </a></p>
+          Verify the authenticity of reviews <a className="text-primary after:content-['_↗']" href="https://www.fiverr.com/wavewalker777">here </a></p>
           <Suspense fallback={<ScreenLoadingSpinner />}>
             <section className=''>
               <div className="container mx-auto px-5 py-12">
