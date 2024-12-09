@@ -15,38 +15,47 @@ export default async function Journey() {
       year: 2024,
       logs: [
         {
-          title: 'Launched New Initiative',
+          id:"",
+          title: 'purchased essentials items to enhance my workflow',
+          description:
+            'This year marked a major milestone as we surpassed 1 million active users. It is a testament to the dedication of our team and the trust of our users. We remain committed to growing and innovating further.',
+          // image: {
+          //   url: 'https://placehold.co/600x300',
+          //   width: '600',
+          //   height: '300'
+          // }
+        },
+        {
+          id:"",
+          title: 'Made Mistwrite',
           description:
             'We introduced a new initiative aimed at redefining user engagement. The project focuses on delivering seamless experiences across all platforms. Early feedback has been overwhelmingly positive.<br><br>[Portfolio Link](https://manmeets.vercel.app/)',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         },
         {
-          title: 'Team Expansion',
+          id:"",
+          title: 'New Portolfio revamp',
           description:
-            'Our team grew significantly with the addition of talented professionals. This has allowed us to diversify our skills and accelerate innovation. Together, we are setting new benchmarks in the industry.',
+            'from static basic , html templates -> html+tailwind -> using learning react -> now react + shadcn ui Our team grew significantly with the addition of talented professionals. This has allowed us to diversify our skills and accelerate innovation. Together, we are setting new benchmarks in the industry.',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         },
+        
         {
-          title: 'Milestone Achievement',
+          id:"",
+          title: 'bought new laptop',
           description:
             'This year marked a major milestone as we surpassed 1 million active users. It is a testament to the dedication of our team and the trust of our users. We remain committed to growing and innovating further.',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         }
@@ -56,79 +65,52 @@ export default async function Journey() {
       year: 2023,
       logs: [
         {
-          title: 'Product Launch',
+          id:"wooden-desk",
+          title: 'Hybrid Wooden Desk story',
           description:
             'We successfully launched our flagship product, creating waves in the industry. The launch was accompanied by a robust marketing campaign and glowing reviews. Customers praised its ease of use and innovative features.',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         },
-        {
-          title: 'New Partnerships',
-          description:
-            'Collaborating with leading organizations, we forged strategic partnerships. These alliances have opened doors to new opportunities and expanded our market reach. Together, we aim to create solutions that drive impact.',
-          image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
-            height: '300'
-          }
-        },
-        {
-          title: 'First Conference',
-          description:
-            'Our debut at a global conference was a highlight of the year. We showcased our cutting-edge solutions to an enthusiastic audience. The event established us as an emerging leader in the tech landscape.',
-          image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
-            height: '300'
-          }
-        }
+   
       ]
     },
     {
-      year: 2022,
+      year: 2019,
       logs: [
         {
-          title: 'Company Founded',
+          id:"",
+          title: 'Setup first freelancing account',
           description:
             'Our journey began with a vision to revolutionize the industry. Starting small, we laid a strong foundation with innovative ideas and a passionate team. From day one, our focus has been on delivering excellence.',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         },
         {
+          id:"",
           title: 'First Client Acquired',
           description:
             'We secured our first client, marking an important milestone in our story. This partnership reinforced our belief in our solutions and their market relevance. It set the stage for future successes.',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         },
         {
+          id:"",
           title: 'Office Setup',
           description:
             'We established our first office, creating a collaborative space for the team. It became the hub of creativity, planning, and execution. This environment played a key role in shaping our early growth.',
           image: {
-            url: 'https://placehold.co/600x400',
-            // title: 'Dummy Image',
-            // description: 'Dummy Description',
-            width: '500',
+            url: 'https://placehold.co/600x300',
+            width: '600',
             height: '300'
           }
         }
@@ -171,7 +153,7 @@ export default async function Journey() {
                 </div>
               ))} */}
               {journeyBook.map((item, itemIndex) => (
-                <div key={`data_${itemIndex}`} className="flex flex-col items-baseline gap-6 md:flex-row md:gap-12">
+                <div key={`data_${itemIndex}`}  className="flex flex-col items-baseline gap-6 md:flex-row md:gap-12">
                   <div className="flex items-center">
                     <h2>{item.year}</h2>
                     <hr className="my-0 ml-4 flex-1 border-dashed border-gray-200" />

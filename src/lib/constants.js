@@ -149,8 +149,6 @@ export const LINKS = [
   } // used as about page
 ]
 
-
-
 export const WEB_ProjectCategories = [
   {
     title: 'MistWrite',
@@ -162,13 +160,13 @@ export const WEB_ProjectCategories = [
   },
 
   {
-      title: 'Frontend Mentor solutions',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-    },
+    title: 'Frontend Mentor solutions',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  },
   {
     title: 'NFT Marketplace Dashboard',
     link: '#',
@@ -178,13 +176,13 @@ export const WEB_ProjectCategories = [
     excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   },
   {
-      title: 'RPG Level Up UI',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
-    },
+    title: 'RPG Level Up UI',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+  },
   // {
   //   title: 'Currency converter',
   //   link: '#',
@@ -193,7 +191,7 @@ export const WEB_ProjectCategories = [
   //   domain: 'manmeets.vercel.app',
   //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   // },
-  
+
   {
     title: 'Productivity Dashboard',
     link: '#',
@@ -202,7 +200,6 @@ export const WEB_ProjectCategories = [
     domain: 'manmeets.vercel.app',
     excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
   },
-  
 
   {
     title: 'Quotes API PWA Notifications',
@@ -217,15 +214,15 @@ export const WEB_ProjectCategories = [
 export const WP_ProjectCategories = [
   {
     title: 'ImpactHQ',
-    link:"#",
+    link: '#',
     tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
+    cover: 'https://cdn.dribbble.com/userupload/8141448/file/original-b3b71c2b63a36e56727b0d2b6ee5ff95.png',
     domain: 'Screenshots',
     excerpt: 'Business site - A robust platform tailored for impactful business workflows and collaborations.'
   },
   {
     title: 'Shopphoria',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -233,7 +230,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'DevDiary',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -241,7 +238,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'LeadGen',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -249,7 +246,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'RxReady',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -257,7 +254,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'Newsreader',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -265,7 +262,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'RiskRadar',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -273,7 +270,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'Labofy',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -281,7 +278,7 @@ export const WP_ProjectCategories = [
   },
   {
     title: 'JethiTech',
-    link:"#",
+    link: '#',
     tags: ['Business'],
     cover: 'https://placehold.co/600x400',
     domain: 'Screenshots',
@@ -290,10 +287,6 @@ export const WP_ProjectCategories = [
 ]
 
 export const UI_ProjectCategories = [
-
-
-
-
   {
     title: '    Payment App',
     link: '#',
@@ -329,11 +322,6 @@ export const UI_ProjectCategories = [
 ]
 
 export const OTHER_ProjectCategories = [
-
-
-
-
-
   {
     title: 'Logo Designs',
     link: '#',
@@ -386,7 +374,7 @@ export const FEATURED_ProjectTable_Home = [
     cover: 'https://placehold.co/600x400',
     domain: 'manmeets.vercel.app',
     excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-  },
+  }
   // {
   //   title: 'Personal Portfolio',
   //   description: 'A collection of indispensable utilities for day-to-day productivity.',
@@ -403,59 +391,66 @@ export const FEATURED_ProjectTable_Home = [
 
 export const WORKSPACE_ITEMS = [
   {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
+    title: 'Lenovo LOQ 15 Ryzen 7 7840HS',
+    specs: 'My main powerhouse for work and play.',
+    url: 'https://amzn.to/3ONcpX6'
   },
   {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
+    title: 'Aluminium Laptop Stand',
+    specs: 'Enhances airflow and improves viewing comfort.',
+    url: 'https://amzn.to/41lem4r'
   },
   {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
+    title: 'Archer Tech Lab Astra M200',
+    specs: 'Primary keyboard. Full size, customizable per-key RGB and highly responsive blue switches.',
+    url: 'https://amzn.to/3OJIG10'
   },
   {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
+    title: 'EvoFox Blaze Gaming Mouse',
+    specs: 'Responsive mouse with 8 fully programmable buttons, offering customizable RGB and DPI settings.',
+    url: 'https://amzn.to/49rIlcS'
   },
   {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
+    title: 'Extended Size Mousepad',
+    specs: 'Spacious 800 mm x 300 mm x 2 mm dimensions to keep my keybaord and mouse together.',
+    url: 'https://amzn.to/3VtRXhq'
+  },
+
+  {
+    title: '360 Degree Rotating Desk Organizer',
+    specs: 'To keep my desk clean by keeping daily use items in one place, organized and fast access ',
+    url: 'https://amzn.to/3B9ke6h'
+  },
+
+  {
+    title: 'Hybrid Wooden Desk',
+    specs: '6ft. space to put all of the items above with drawer',
+    url: '/journey#wooden-desk'
   },
   {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
+    title: 'Cable Management Box ',
+    specs: 'Keeps cables organized and hidden neatly. Also works as an extension to my devices',
+    url: 'https://amzn.to/41ryTEA'
   },
-  {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
-  },
-  {
-    title: 'IKEA Övning Footrest',
-    url: 'https://www.ikea.com/nl/en/p/oevning-multifunctional-ergonomic-footrest-00552020/',
-    specs: 'Gray/Blue'
-  }
+  // {
+  //   title: 'Data Cable Organizer and Storage Box',
+  //   specs: 'Gray/Blue',
+  //   url: 'https://amzn.to/4fbRNT5'
+  // }
 ]
 
 export const SCROLL_AREA_ID = 'scroll-area'
 export const MOBILE_SCROLL_THRESHOLD = 20
-export const SUPABASE_TABLE_NAME = 'pages'
+// export const SUPABASE_TABLE_NAME = 'pages'
 
-export const SUBMIT_BOOKMARK_FORM_TITLE = 'Submit a bookmark'
-export const SUBMIT_BOOKMARK_FORM_DESCRIPTION =
-  "Send me a website you like and if I like it too, you'll see it in the bookmarks list. With respect, please do not submit more than 5 websites a day."
-export const MAX_BOOKMARK_SUBMISSIONS_PER_DAY = 5
-export const BOOKMARK_SUBMISSION_COUNT_COOKIE_NAME = 'formSubmissionCount'
+// export const SUBMIT_BOOKMARK_FORM_TITLE = 'Submit a bookmark'
+// export const SUBMIT_BOOKMARK_FORM_DESCRIPTION =
+  // "Send me a website you like and if I like it too, you'll see it in the bookmarks list. With respect, please do not submit more than 5 websites a day."
+// export const MAX_BOOKMARK_SUBMISSIONS_PER_DAY = 5
+// export const BOOKMARK_SUBMISSION_COUNT_COOKIE_NAME = 'formSubmissionCount'
 
-export const CONTENT_TYPES = {
-  PAGE: 'page',
-  POST: 'post',
-  LOGBOOK: 'logbook'
-}
+// export const CONTENT_TYPES = {
+//   PAGE: 'page',
+//   POST: 'post',
+//   LOGBOOK: 'logbook'
+// }

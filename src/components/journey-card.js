@@ -2,8 +2,8 @@ import dynamic from 'next/dynamic'
 
 const MarkdownRenderer = dynamic(() => import('@/components/markdown-renderer').then((mod) => mod.MarkdownRenderer))
 
-export const JourneyCard = ({ title, description, image, index }) => (
-  <div className="word-break-word flex flex-col">
+export const JourneyCard = ({ id, title, description, image, index }) => (
+  <div id={id} className="word-break-word flex flex-col">
     <span className="font-semibold tracking-tight">{title}</span>
     {description && <MarkdownRenderer className="text-sm">{description}</MarkdownRenderer>}
     {image?.url && (

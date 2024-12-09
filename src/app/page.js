@@ -1,22 +1,18 @@
-import Image from 'next/image'
 
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table.jsx'
 // import { getPageSeo } from '@/lib/contentful'
-import { isExternalLink } from '@/lib/utils'
 import { FEATURED_ProjectTable_Home } from '@/lib/constants'
-import { Suspense } from 'react'
+import { isExternalLink } from '@/lib/utils'
 import Link from 'next/link'
 
 import { ScrollArea } from '@/components/scroll-area'
-import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
 // import { WritingList } from '@/components/writing-list'
 import { FloatingHeader } from '@/components/floating-header'
 import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button.jsx'
 // import { getAllPosts } from '@/lib/contentful'
 // import { getSortedPosts, getItemsByYear } from '@/lib/utils'
-import { ArrowRight, ChevronRight, Dot, DotIcon, DownloadIcon, Ellipsis } from 'lucide-react'
-import { GradientBg2 } from '@/components/gradient-bg'
+import { DotIcon } from 'lucide-react'
 
 // async function fetchData() {
 //   const allPosts = await getAllPosts()
