@@ -1,6 +1,6 @@
-import { FolderIcon, FolderOpenIcon, Link2Icon } from 'lucide-react'
+import { FolderOpenIcon, Link2Icon } from 'lucide-react'
 
-export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, customIcon }) => {
+export const ProjectPreview = ({ link, cover, title, tags, domain, excerpt, note, customIcon }) => {
   return (
     <>
       <div className="w-full p-4 md:w-1/2 ">
@@ -14,7 +14,7 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
           <div className="rounded-lg bg-gray-100 p-4">
             <img className="mb-4 h-40 w-full rounded object-cover object-center" src={cover} alt={title} />
             <h3 className="inline-flex items-center gap-1 text-xs font-medium tracking-normal text-primary">
-              {link ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.5} />}
+              {link ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={14} strokeWidth={2.25} />}
 
               <span className="font-medium ">{domain}</span>
             </h3>

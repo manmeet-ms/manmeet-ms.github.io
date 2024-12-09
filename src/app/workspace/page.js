@@ -13,7 +13,8 @@ export default async function Workspace() {
   return (
     <ScrollArea>
       <GradientBg4 />
-      <FloatingHeader title="Workspace" />
+      {/* <FloatingHeader scrollTitle="Workspace" /> */}
+            <FloatingHeader title="Workspace" />
       <div className="content-wrapper">
         <div className="content">
           <PageTitle title="Workspace" />

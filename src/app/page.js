@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table.jsx'
 // import { getPageSeo } from '@/lib/contentful'
 import { isExternalLink } from '@/lib/utils'
-import { RESUME_ITEMS } from '@/lib/constants'
+import { FEATURED_ProjectTable_Home } from '@/lib/constants'
 import { Suspense } from 'react'
 import Link from 'next/link'
 
@@ -48,12 +48,12 @@ export default async function Home() {
           <div className="container flex w-full items-center justify-center gap-6 text-muted-foreground/30">
             <DotIcon /> <DotIcon /> <DotIcon />
           </div>
-          <div className="mb-4  mt-8 flex items-center justify-between">
             <Button asChild variant="link" className="inline px-0">
               <Link href="/projects">
                 <h2>Projects</h2>
               </Link>
             </Button>
+          {/* <div className="mb-4  mt-8 flex items-center justify-between">
             <Link href="/projects">
             <Button variant="ghost" className="inline-flex items-center justify-center gap-2">
               View All
@@ -61,7 +61,7 @@ export default async function Home() {
               <ArrowRight size={14} strokeWidth={3} />
             </Button>
             </Link>
-          </div>
+          </div> */}
           {/*<Suspense fallback={<ScreenLoadingSpinner />}>
             <WritingList items={items} header="Writing" />  
           </Suspense> */}
@@ -76,7 +76,7 @@ export default async function Home() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {RESUME_ITEMS.map((item, itemIndex) => {
+                {FEATURED_ProjectTable_Home.map((item, itemIndex) => {
                   const isExternal = isExternalLink(item.url)
 
                   return (
@@ -85,21 +85,21 @@ export default async function Home() {
                       <TableCell className="px-4 py-3">
                         
                         <div className="flex flex-col">
-                          <span>{item.description}</span>
+                          <span>{item.excerpt}</span>
                           <div className="flex flex-wrap gap-1 ">
-                            {item.tags.map((categoryItem, idx) => (
+                            {item.tags?(item.tags.map((tag, idx) => (
                               <span
                                 key={idx}
-                                className="mt-2 rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary"
+                                className="cursor-pointer mt-2 rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary"
                               >
-                                {categoryItem}
+                                {tag}
                               </span>
-                            ))}
+                            ))):null}
                           </div>
                         </div>
                       </TableCell>
                       <TableCell className="px-4 py-3 font-medium">
-                        <Link href={item.url}>{isExternal ? 'Visit' : 'Preview'}</Link>
+                        <Link href={item.link}>{isExternal ? 'Visit' : 'Preview'}</Link>
                       </TableCell>
                     </TableRow>
                   )

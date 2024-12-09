@@ -149,33 +149,258 @@ export const LINKS = [
   } // used as about page
 ]
 
-export const RESUME_ITEMS = [
+
+
+export const WEB_ProjectCategories = [
   {
     title: 'MistWrite',
-    description: 'A curated collection of tools for efficient coding and debugging workflows.',
+    link: '#',
     tags: ['Frontend UI', 'React'],
-    url: 'https://www.example.com'
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   },
 
   {
-    title: 'Frontend Mentor solutions',
-    description: 'Optimized setups for seamless browsing and developer tool integration.',
+      title: 'Frontend Mentor solutions',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+    },
+  {
+    title: 'NFT Marketplace Dashboard',
+    link: '#',
     tags: ['Frontend UI', 'React'],
-    url: 'https://www.example.com'
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   },
   {
-    title: 'Personal Portfolio',
-    description: 'A collection of indispensable utilities for day-to-day productivity.',
+      title: 'RPG Level Up UI',
+      link: '#',
+      tags: ['Frontend UI', 'React'],
+      cover: 'https://placehold.co/600x400',
+      domain: 'manmeets.vercel.app',
+      excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+    },
+  // {
+  //   title: 'Currency converter',
+  //   link: '#',
+  //   tags: ['Frontend UI', 'React'],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'manmeets.vercel.app',
+  //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+  // },
+  
+  {
+    title: 'Productivity Dashboard',
+    link: '#',
     tags: ['Frontend UI', 'React'],
-    url: '#'
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  },
+  
+
+  {
+    title: 'Quotes API PWA Notifications',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  }
+]
+
+export const WP_ProjectCategories = [
+  {
+    title: 'ImpactHQ',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Business site - A robust platform tailored for impactful business workflows and collaborations.'
+  },
+  {
+    title: 'Shopphoria',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'E-commerce site - Streamlined solutions for modern e-commerce needs with an intuitive design.'
+  },
+  {
+    title: 'DevDiary',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Personal Portfolio site - Your ultimate companion for showcasing projects and professional growth.'
+  },
+  {
+    title: 'LeadGen',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Marketing Agency site - Innovative tools to generate leads and manage marketing campaigns effectively.'
+  },
+  {
+    title: 'RxReady',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Medical Store site - Custom solutions for managing medical inventories and appointments.'
+  },
+  {
+    title: 'Newsreader',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'News site - A clean and responsive theme designed for delivering breaking news effortlessly.'
+  },
+  {
+    title: 'RiskRadar',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Finance Consultancy site - A sleek framework for risk management and financial consulting firms.'
+  },
+  {
+    title: 'Labofy',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Healthcare site - Advanced solutions for laboratory management and patient booking systems.'
+  },
+  {
+    title: 'JethiTech',
+    link:"#",
+    tags: ['Business'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'Screenshots',
+    excerpt: 'Agency/Consulting site - An all-in-one suite for agencies to manage clients and projects seamlessly.'
+  }
+]
+
+export const UI_ProjectCategories = [
+
+
+
+
+  {
+    title: '    Payment App',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
+  },
+  {
+    title: 'Skill-up platform',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
+  },
+  {
+    title: 'Expense Tracking App',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
+  },
+  {
+    title: 'Inventory Management Dashboard',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'A modern workspace for building and testing prototypes with real-world interactions.'
+  }
+]
+
+export const OTHER_ProjectCategories = [
+
+
+
+
+
+  {
+    title: 'Logo Designs',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
   {
     title: 'Discord servers',
-    description: 'Essential utilities for photographers to organize and enhance their workflows.',
+    link: '#',
     tags: ['Frontend UI', 'React'],
-    url: 'https://www.example.com'
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+  },
+  {
+    title: 'Gig Thumbnails',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+  },
+  {
+    title: 'Social Media post designs',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+  },
+  {
+    title: 'Personal Portfolio',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'A collection of indispensable utilities for day-to-day productivity.'
   }
 ]
+
+export const FEATURED_ProjectTable_Home = [
+  WEB_ProjectCategories[0],
+  WEB_ProjectCategories[1],
+  {
+    title: 'WordPress Websites',
+    link: '#',
+    tags: ['Frontend UI', 'React'],
+    cover: 'https://placehold.co/600x400',
+    domain: 'manmeets.vercel.app',
+    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  },
+  // {
+  //   title: 'Personal Portfolio',
+  //   description: 'A collection of indispensable utilities for day-to-day productivity.',
+  //   tags: ['Frontend UI', 'React'],
+  //   url: '#'
+  // },
+  // {
+  //   title: 'Discord servers',
+  //   description: 'Essential utilities for photographers to organize and enhance their workflows.',
+  //   tags: ['Frontend UI', 'React'],
+  //   url: 'https://www.example.com'
+  // }
+]
+
 export const WORKSPACE_ITEMS = [
   {
     title: 'IKEA Övning Footrest',

@@ -5,219 +5,18 @@ import { ScrollArea } from '@/components/scroll-area'
 import { ProjectCard } from './project-card'
 import { Button } from '@/components/ui/button'
 import { Download, DownloadIcon } from 'lucide-react'
+import {WEB_ProjectCategories
+  ,WP_ProjectCategories
+  ,UI_ProjectCategories
+  ,OTHER_ProjectCategories} from "../../lib/constants"
 
-export default async function Projects() {
-  const web_projectCategories = [
-    {
-      title: 'MistWrite',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
-    },
+  export default async function Projects() {
 
-    {
-        title: 'Frontend Mentor solutions',
-        link: '#',
-        tags: ['Frontend UI', 'React'],
-        cover: 'https://placehold.co/600x400',
-        domain: 'manmeets.vercel.app',
-        excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-      },
-    // {
-    //   title: 'NFT Marketplace Dashboard',
-    //   link: '#',
-    //   tags: ['Frontend UI', 'React'],
-    //   cover: 'https://placehold.co/600x400',
-    //   domain: 'manmeets.vercel.app',
-    //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
-    // },
-    // {
-    //     title: 'RPG Level Up UI',
-    //     link: '#',
-    //     tags: ['Frontend UI', 'React'],
-    //     cover: 'https://placehold.co/600x400',
-    //     domain: 'manmeets.vercel.app',
-    //     excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
-    //   },
-    // {
-    //   title: 'Currency converter',
-    //   link: '#',
-    //   tags: ['Frontend UI', 'React'],
-    //   cover: 'https://placehold.co/600x400',
-    //   domain: 'manmeets.vercel.app',
-    //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
-    // },
-    
-    // {
-    //   title: 'Productivity Dashboard',
-    //   link: '#',
-    //   tags: ['Frontend UI', 'React'],
-    //   cover: 'https://placehold.co/600x400',
-    //   domain: 'manmeets.vercel.app',
-    //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-    // },
-    
-
-    // {
-    //   title: 'Quotes API PWA Notifications',
-    //   link: '#',
-    //   tags: ['Frontend UI', 'React'],
-    //   cover: 'https://placehold.co/600x400',
-    //   domain: 'manmeets.vercel.app',
-    //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-    // }
-  ]
-
-  const wp_projectCategories = [
-    {
-      title: 'ImpactHQ',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Business site - A robust platform tailored for impactful business workflows and collaborations.'
-    },
-    {
-      title: 'Shopphoria',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'E-commerce site - Streamlined solutions for modern e-commerce needs with an intuitive design.'
-    },
-    {
-      title: 'DevDiary',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Personal Portfolio site - Your ultimate companion for showcasing projects and professional growth.'
-    },
-    {
-      title: 'LeadGen',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Marketing Agency site - Innovative tools to generate leads and manage marketing campaigns effectively.'
-    },
-    {
-      title: 'RxReady',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Medical Store site - Custom solutions for managing medical inventories and appointments.'
-    },
-    {
-      title: 'Newsreader',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'News site - A clean and responsive theme designed for delivering breaking news effortlessly.'
-    },
-    {
-      title: 'RiskRadar',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Finance Consultancy site - A sleek framework for risk management and financial consulting firms.'
-    },
-    {
-      title: 'Labofy',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Healthcare site - Advanced solutions for laboratory management and patient booking systems.'
-    },
-    {
-      title: 'JethiTech',
-      cover: 'https://placehold.co/600x400',
-      domain: 'Screenshots',
-      excerpt: 'Agency/Consulting site - An all-in-one suite for agencies to manage clients and projects seamlessly.'
-    }
-  ]
-
-  const ui_projectCategories = [
-
-
-
-
-    {
-      title: '    Payment App',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
-    },
-    {
-      title: 'Skill-up platform',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
-    },
-    {
-      title: 'Expense Tracking App',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
-    },
-    {
-      title: 'Inventory Management Dashboard',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'A modern workspace for building and testing prototypes with real-world interactions.'
-    }
-  ]
-
-  const other_projectCategories = [
-
-
-
-
-
-    {
-      title: 'Logo Designs',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
-    },
-    {
-      title: 'Discord servers',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
-    },
-    {
-      title: 'Gig Thumbnails',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
-    },
-    {
-      title: 'Social Media post designs',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
-    },
-    {
-      title: 'Personal Portfolio',
-      link: '#',
-      tags: ['Frontend UI', 'React'],
-      cover: 'https://placehold.co/600x400',
-      domain: 'manmeets.vercel.app',
-      excerpt: 'A collection of indispensable utilities for day-to-day productivity.'
-    }
-  ]
 
   return (
     <ScrollArea useScrollAreaId>
       <GradientBg2 />
-      <FloatingHeader scrollTitle="Stack" />
+      <FloatingHeader scrollTitle="Projects" />
       <div className="content-wrapper">
         <div className="content">
           <div className='flex items-start justify-between' >
@@ -245,7 +44,7 @@ Click the  next to each project to view live projects.
                   </p>
                 </div>
                 <div className="-m-4 flex flex-wrap">
-                  {web_projectCategories.map((project, index) => (
+                  {WEB_ProjectCategories.map((project, index) => (
                     <>
                       <ProjectCard
                         key={index}
@@ -277,7 +76,7 @@ Click the  next to each project to view live projects.
                   </p>
                 </div>
                 <div className="-m-4 flex flex-wrap">
-                  {wp_projectCategories.map((project, index) => (
+                  {WP_ProjectCategories.map((project, index) => (
                     <>
                       <ProjectCard
                         key={index}
@@ -311,7 +110,7 @@ Click the  next to each project to view live projects.
                   </p>
                 </div>
                 <div className="-m-4 flex flex-wrap">
-                  {ui_projectCategories.map((project, index) => (
+                  {UI_ProjectCategories.map((project, index) => (
                     <>
                       <ProjectCard
                         key={index}
@@ -343,7 +142,7 @@ Click the  next to each project to view live projects.
                   </p>
                 </div>
                 <div className="-m-4 flex flex-wrap">
-                  {other_projectCategories.map((project, index) => (
+                  {OTHER_ProjectCategories.map((project, index) => (
                     <>
                       <ProjectCard
                         key={index}
