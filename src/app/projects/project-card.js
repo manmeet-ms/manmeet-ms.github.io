@@ -11,10 +11,10 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
           rel="noopener noreferrer"
           // data-item-order={order}
         >
-          <div className="rounded-lg  p-4 shadow-md">
-            <img className="mb-4 h-40 w-full rounded object-cover object-center" src={cover} alt={title} />
+          <div className="rounded-lg  p-4 border bg-muted/20">
+            <img className="mb-4 h-40 w-full rounded object-cover object-top  " src={cover} alt={title} />
             <h3 className="inline-flex items-center gap-1 text-xs font-medium tracking-normal text-primary">
-              {link ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.5} />}
+              {domain.includes('.') ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.5} />}
 
               <span className="font-medium ">{domain}</span>
             </h3>
@@ -23,8 +23,9 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
             <div className="mb-2 flex flex-wrap gap-1 ">
               {tags
                 ? tags.map((item, idx) => (
-                    <span key={idx} className="rounded-full bg-primary/20 px-2 py-1 text-xs font-medium text-primary">
-                      {item}
+                    <span key={idx} className="rounded-md bg-primary/20 px-2 py-1 text-xs font-semibold tracking-[0.25px] text-primary">
+                      <code>#{item.replace(' ', '_').toLowerCase()}</code>
+                      {/* {item} */}
                     </span>
                   ))
                 : null}

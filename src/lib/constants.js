@@ -8,6 +8,7 @@ import {
   MessageSquareIcon,
   NavigationIcon,
   Notebook,
+  PaperclipIcon,
   PencilLineIcon,
   SparklesIcon,
   Wand2Icon
@@ -109,17 +110,13 @@ export const LINKS = [
   //   href: '/about',
   //   label: 'About',
   //   icon: <Notebook size={16} />
+  //   icon: <InfoIcon size={16} />
   // },
 
   // {
   //   href: '/writing',
   //   label: 'Writing',
   //   icon: <PencilLineIcon size={16} />
-  // },
-  // {
-  //   href: '/about',
-  //   label: 'About',
-  //   icon: <InfoIcon size={16} />
   // },
   {
     href: '/projects',
@@ -146,222 +143,245 @@ export const LINKS = [
     href: '/workspace',
     label: 'Workspace',
     icon: <ArmchairIcon size={16} />
-  } // used as about page
+  } ,
+  // {
+  //   href: '/resume',
+  //   label: 'Resume',
+  //   icon: <PaperclipIcon
+  //    size={16} />
+  // } ,
 ]
 
 export const WEB_ProjectCategories = [
   {
     title: 'Mistwrite',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    link: 'https://mistwrite.vercel.app/',
+    tags: ['AppWrite', 'React', 'Tailwind', 'shadcn/ui'],
+    cover: '/portfolio_ss/covers/mistwrite-cover.png',
+    domain: 'mistwrite.vercel.app',
     excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   },
-
+  
+  
+  
   {
-    title: 'Frontend Mentor solutions',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-  },
-  {
-    title: 'NFT Marketplace Dashboard',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
-  },
-  {
-    title: 'RPG Level Up UI',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+    title: 'Linktrix',
+    link: '',
+    tags: [ 'React', 'Tailwind', 'shadcn/ui', 'template'],
+    cover: '/assets/fallback.avif',
+    domain: 'linktrix.vercel.app',
+    excerpt: 'All links at one place, fully responsive template for any use case.'
   },
   // {
-  //   title: 'Currency converter',
-  //   link: '#',
-  //   tags: ['Frontend UI', 'React'],
+  //   title: 'Frontend Mentor solutions',
+  //   link: '',
+  //   tags: [''],
   //   cover: 'https://placehold.co/600x400',
-  //   domain: 'manmeets.vercel.app',
+  //   domain: 'Previews',
+  //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  // },
+  // {
+  //   title: 'Marketplace Dashboard',
+  //   link: '',
+  //   tags: [''],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'Previews',
+  //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+  // },
+  // {
+  //   title: 'RPG Level Up UI',
+  //   link: '',
+  //   tags: [''],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'Previews',
+  //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
+  // },
+  // {
+  //   title: 'Currency converter',
+  //   link: '',
+  //   tags: [''],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'Previews',
   //   excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   // },
 
-  {
-    title: 'Productivity Dashboard',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-  },
+  // {
+  //   title: 'Productivity Dashboard',
+  //   link: '',
+  //   tags: [''],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'Previews',
+  //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  // },
 
-  {
-    title: 'Quotes API PWA Notifications',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
-  }
+  // {
+  //   title: 'Quotes API PWA Notifications',
+  //   link: '',
+  //   tags: [''],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'Previews',
+  //   excerpt: 'Optimized setups for seamless browsing and developer tool integration.'
+  // }
 ]
 
 export const WP_ProjectCategories = [
   {
     title: 'ImpactHQ',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://cdn.dribbble.com/userupload/8141448/file/original-b3b71c2b63a36e56727b0d2b6ee5ff95.png',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=17ksTbHXZEQ2K6iN-id9F-fBXLq7cSWmP&usp=drive_fs',
+    tags: ['WordPress','Business', 'Landing page'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/ImpactHQ_Business/Business_landing_page_full_site.jpeg',
+    domain: 'Previews',
     excerpt: 'Business site - A robust platform tailored for impactful business workflows and collaborations.'
   },
   {
     title: 'Shopphoria',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=17Dftt0r2aG8zpC4B2rccPL3zuNJPrGh2&usp=drive_fs',
+    tags: ['WordPress','E-commerce', 'Store'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/Shopporia_Ecommerce/cover_full.jpeg',
+    domain: 'Previews',
     excerpt: 'E-commerce site - Streamlined solutions for modern e-commerce needs with an intuitive design.'
   },
   {
     title: 'DevDiary',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=17PSll2PnEhLBIVrSL8Dyzz1DC4XqwG4Q&usp=drive_fs',
+    tags: ['WordPress','Personal Portfolio'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/DevDiary_Personal_Portfolio/Screenshot_25-7-2024_162114_localhost.jpeg',
+    domain: 'Previews',
     excerpt: 'Personal Portfolio site - Your ultimate companion for showcasing projects and professional growth.'
   },
   {
     title: 'LeadGen',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=17UvBc4z41csYkbESArB9IohGIeRHdUtM&usp=drive_fs',
+    tags: ['WordPress','Markeking','CRM'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/LeadGen_Marketing/Marketing lead generation full site.jpeg',
+    domain: 'Previews',
     excerpt: 'Marketing Agency site - Innovative tools to generate leads and manage marketing campaigns effectively.'
   },
   {
     title: 'RxReady',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=17CBDUOjXrYIrFqwWR6Jdmh-ia3R0h2U6&usp=drive_fs',
+    tags: ['WordPress','Medical store'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/MedicalStore/Screenshot_25-9-2024_181142_localhost.jpeg',
+    domain: 'Previews',
     excerpt: 'Medical Store site - Custom solutions for managing medical inventories and appointments.'
   },
   {
     title: 'Newsreader',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=107FnX_WnTCMbk6CiNy5sJSLd50cr_nVe&usp=drive_fs',
+    tags: ['WordPress','News'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/Newsreader_News/Newsreader - News Site.jpeg',
+    domain: 'Previews',
     excerpt: 'News site - A clean and responsive theme designed for delivering breaking news effortlessly.'
   },
   {
     title: 'RiskRadar',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
+    link: 'https://drive.google.com/open?id=17TnQikx61M_08U3kppE_cAgJk6JjEtGr&usp=drive_fs',
+    tags: ['WordPress','Finance','Consultancy'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/RiskRadar_Financial_Consultancy/Finance Insurance Consultancy 4 21-7-2024_164622_localhost.png',
+    domain: 'Previews',
     excerpt: 'Finance Consultancy site - A sleek framework for risk management and financial consulting firms.'
   },
+  // {
+  //   title: 'Labofy',
+  //   link: '',
+  //   tags: ['WordPress',''],
+  //   cover: '',
+  //   domain: 'Previews',
+  //   excerpt: 'Healthcare site - Advanced solutions for laboratory management and patient booking systems.'
+  // },
+  // {
+  //   title: 'JethiTech',
+  //   link: '',
+  //   tags: ['WordPress',''],
+  //   cover: '',
+  //   domain: 'Previews',
+  //   excerpt: 'Agency/Consulting site - An all-in-one suite for agencies to manage clients and projects seamlessly.'
+  // }
   {
-    title: 'Labofy',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
-    excerpt: 'Healthcare site - Advanced solutions for laboratory management and patient booking systems.'
-  },
-  {
-    title: 'JethiTech',
-    link: '#',
-    tags: ['Business'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'Screenshots',
-    excerpt: 'Agency/Consulting site - An all-in-one suite for agencies to manage clients and projects seamlessly.'
+    title: 'Past experiences',
+    link: 'https://drive.google.com/open?id=108o8SnP691gngeeH-KTwYu5efmNssxBN&usp=drive_fs',
+    tags: ['Intership'],
+    cover: 'https://img.freepik.com/free-photo/door-leading-magical-world_23-2151038219.jpg?ga=GA1.1.342254830.1718120885&semt=ais_hybrid',
+    domain: 'Drive Links',
+    excerpt: 'As an intern, I have worked with Labofy and Jethitech Solutions, managing and creating new websites while improving UX.'
   }
 ]
 
 export const UI_ProjectCategories = [
   {
     title: '    Payment App',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    link: 'https://drive.google.com/open?id=11AxvOmMyNdj9AE5NVvpcKwaP6ZlZMVpR&usp=drive_fs',
+    tags: ['Figma', 'UI'],
+    cover: '/portfolio_ss/covers/payment-app-cover.png',
+    domain: 'Previews',
     excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
   },
   {
     title: 'Skill-up platform',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    link: 'https://drive.google.com/open?id=1-P8oOprY_S3M6y4ONKVk3a5sVc1r3M0n&usp=drive_fs',
+    tags: ['Hackathon', 'Figma', 'UI'],
+    cover: '/portfolio_ss/covers/skillhashi-cover.png',
+    domain: 'Previews',
     excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
   },
-  {
-    title: 'Expense Tracking App',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
-  },
-  {
-    title: 'Inventory Management Dashboard',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'A modern workspace for building and testing prototypes with real-world interactions.'
-  }
+  // {
+    //   title: 'Expense Tracking App',
+    //   link: 'https://drive.google.com/open?id=1-P8oOprY_S3M6y4ONKVk3a5sVc1r3M0n&usp=drive_fs',
+    // tags: ['Hackathon', 'Figma', 'UI'],
+  //   cover: '/portfolio_ss/covers/',
+  //   domain: 'Previews',
+  //   excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
+  // },
+  // {
+  //   title: 'Inventory Management Dashboard',
+  //   link: 'https://drive.google.com/open?id=1-P8oOprY_S3M6y4ONKVk3a5sVc1r3M0n&usp=drive_fs',
+  //   tags: [''],
+  //   cover: '/portfolio_ss/covers/',
+  //   domain: 'Previews',
+  //   excerpt: 'A modern workspace for building and testing prototypes with real-world interactions.'
+  // }
 ]
 
 export const OTHER_ProjectCategories = [
   {
     title: 'Logo Designs',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    tags:['hobby'],
+    link: 'https://drive.google.com/open?id=1-T58bYcS2L_QG8D7fxJCf9V0s1alXPh0&usp=drive_fs',
+    cover: '/portfolio_ss/covers/logo-design-cover.png',
+    domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
   {
     title: 'Discord servers',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    link: 'https://drive.google.com/open?id=1-Au5xZWU2yx3IIPJ7h0iIjNrrudWE3fy&usp=drive_fs',
+    tags: ['freelance', 'international'],
+    cover: '/portfolio_ss/covers/dc-cover.png',
+    domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
   {
     title: 'Gig Thumbnails',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    link: 'https://drive.google.com/open?id=1-9lPkY3TGo9d06umyZc9E_VDKpnxRq_5&usp=drive_fs',
+    tags: ['freelance','thumbnails','self'],
+    cover: '/portfolio_ss/covers/gig-thumbnails-cover.png',    domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
   {
     title: 'Social Media post designs',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
+    link: 'https://drive.google.com/open?id=1-EeivEx1iQDo_ceEoJkMEu06MCvkTzz6&usp=drive_fs',
+    tags: ['self'],
+    cover: '/portfolio_ss/covers/posts-cover.png',    
+    domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
-  {
-    title: 'Personal Portfolio',
-    link: '#',
-    tags: ['Frontend UI', 'React'],
-    cover: 'https://placehold.co/600x400',
-    domain: 'manmeets.vercel.app',
-    excerpt: 'A collection of indispensable utilities for day-to-day productivity.'
-  }
+  // {
+  //   title: 'Personal Portfolio',
+  //   link: '',
+  //   tags: [''],
+  //   cover: 'https://placehold.co/600x400',
+  //   domain: 'manmeets.vercel.app',
+  //   excerpt: 'A collection of indispensable utilities for day-to-day productivity.'
+  // }
 ]
 
 export const FEATURED_ProjectTable_Home = [
@@ -396,13 +416,13 @@ export const FEATURED_ProjectTable_Home = [
   // {
   //   title: 'Personal Portfolio',
   //   description: 'A collection of indispensable utilities for day-to-day productivity.',
-  //   tags: ['Frontend UI', 'React'],
-  //   url: '#'
+  //   tags: [''],
+  //   url: ''
   // },
   // {
   //   title: 'Discord servers',
   //   description: 'Essential utilities for photographers to organize and enhance their workflows.',
-  //   tags: ['Frontend UI', 'React'],
+  //   tags: [''],
   //   url: 'https://www.example.com'
   // }
 ]

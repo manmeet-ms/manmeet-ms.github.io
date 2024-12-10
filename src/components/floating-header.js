@@ -17,7 +17,11 @@ export const FloatingHeader = memo(({ scrollTitle, title, goBackLink, bookmarks,
   const [transformValues, setTransformValues] = useState({ translateY: 0, opacity: scrollTitle ? 0 : 1 })
   const pathname = usePathname()
   const isWritingIndexPage = pathname === '/writing'
+  const isProjectsIndexPage = pathname === '/projects'
+  const isWorkspaceIndexPage = pathname === '/workspace'
   const isWritingPath = pathname.startsWith('/writing')
+  const isProjectPath = pathname.startsWith('/project')
+  const isWorkspacePath = pathname.startsWith('/workspace')
 
   useEffect(() => {
     const scrollAreaElem = document.querySelector(`#${SCROLL_AREA_ID}`)
@@ -76,18 +80,36 @@ export const FloatingHeader = memo(({ scrollTitle, title, goBackLink, bookmarks,
                   <span className="line-clamp-2 font-semibold tracking-tight">{title}</span>
                 </Balancer>
               )}
-              <div className="flex items-center gap-2">
-              <Button variant="outline" size="xs" asChild>
-                    <a
-                      href="https://buymeacoffee.com/manmeets"
-                      title="Support"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Support
-                    </a>
-                  </Button>
-              </div>
+              {(isWritingIndexPage  || isWorkspaceIndexPage) && (
+                <div className="flex items-center gap-2">
+                <Button variant="outline" size="xs" asChild>
+                      <a
+                        href="https://buymeacoffee.com/manmeets"
+                        title="Support"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Support
+                      </a>
+                    </Button>
+                </div>
+                )}
+              {(isProjectsIndexPage) && (
+                <div className="flex items-center gap-2">
+                <Button variant="outline" size="xs" asChild>
+                      <a
+                        href="https://buymeacoffee.com/manmeets"
+                        title="Support"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Resume
+                      </a>
+                    </Button>
+                </div>
+                )}
+
+             
             </div>
           </div>
           {/* This is a hack to show writing views with framer motion reveal effect */}

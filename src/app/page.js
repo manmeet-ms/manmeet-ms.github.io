@@ -62,7 +62,9 @@ export default async function Home() {
           {/*<Suspense fallback={<ScreenLoadingSpinner />}>
             <WritingList items={items} header="Writing" />  
           </Suspense> */}
-          Laest updates and featured projects will be listd here
+
+          {/* Laest updates and featured projects will be listd here */}
+          
           <div className="mt-2 overflow-hidden rounded-lg border bg-white md:mt-8">
             <Table className="h-64 max-h-64 w-full overflow-scroll">
               <TableHeader>
