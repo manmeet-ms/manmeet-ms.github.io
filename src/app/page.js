@@ -11,7 +11,7 @@ import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button.jsx'
 // import { getAllPosts } from '@/lib/contentful'
 // import { getSortedPosts, getItemsByYear } from '@/lib/utils'
-import { Asterisk, AsteriskIcon, DotIcon, LocateIcon } from 'lucide-react'
+import { AsteriskIcon } from 'lucide-react'
 
 // async function fetchData() {
 //   const allPosts = await getAllPosts()

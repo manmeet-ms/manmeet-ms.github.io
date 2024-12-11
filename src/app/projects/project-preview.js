@@ -1,4 +1,4 @@
-import { FolderOpenIcon, Link2Icon } from 'lucide-react'
+import { FolderIcon, FolderOpenIcon, Link2Icon } from 'lucide-react'
 
 export const ProjectPreview = ({ link, cover, title, tags, domain, excerpt, note, customIcon }) => {
   return (

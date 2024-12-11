@@ -2,14 +2,10 @@ import {
   ArmchairIcon,
   FolderTreeIcon,
   GithubIcon,
-  InfoIcon,
   InstagramIcon,
   LinkedinIcon,
   MessageSquareIcon,
   NavigationIcon,
-  Notebook,
-  PaperclipIcon,
-  PencilLineIcon,
   SparklesIcon,
   Wand2Icon
 } from 'lucide-react'
@@ -487,8 +483,8 @@ export const MOBILE_SCROLL_THRESHOLD = 20
 // export const MAX_BOOKMARK_SUBMISSIONS_PER_DAY = 5
 // export const BOOKMARK_SUBMISSION_COUNT_COOKIE_NAME = 'formSubmissionCount'
 
-// export const CONTENT_TYPES = {
-//   PAGE: 'page',
-//   POST: 'post',
-//   LOGBOOK: 'logbook'
-// }
+export const CONTENT_TYPES = {
+  PAGE: 'page',
+  POST: 'post',
+  LOGBOOK: 'logbook'
+}
