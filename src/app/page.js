@@ -31,7 +31,7 @@ export default async function Home() {
           <PageTitle title="Home" className="lg:hidden" />
 
           <p>
-          Hi 👋 I'm Manmeet Singh, a passionate aspiring software engineer in the making, WordPress Developer, UI/UX enthusiast, and a minimalist, based in Delhi, India.
+          Hi 👋 I'm Manmeet Singh, an aspiring software engineer, WordPress developer, UI/UX enthusiast, and a minimalist by nature, based in Delhi, India.
 
           </p>
           <p>
@@ -39,12 +39,14 @@ export default async function Home() {
 
             {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
           </p>
+          <iframe  className='w-full rounded-md'  src="https://git-graph.vercel.app/embed/manmeet-ms?showColorLegend=true&showWeekdayLabels=true&showMonthLabels=true&showTotalCount=true&blockMargin=2&blockRadius=0&blockSize=12&fontSize=8&weekStart=0&year=2024"></iframe>
           <div className="container py-2 flex w-full items-center justify-center gap-6 text-muted-foreground/30">
             <AsteriskIcon/>
             {/* <AsteriskIcon/>
             <AsteriskIcon/> */}
             {/* <DotIcon /> <DotIcon /> <DotIcon /> */}
           </div>
+          
           <Button asChild variant="link" className="inline px-0">
             <a href="/projects">
               <h2>Projects</h2>

@@ -82,6 +82,7 @@
   html,
   body {
     @apply bg-white;
+    scroll-behavior: smooth
   }
 
   html {
@@ -266,3 +267,24 @@
     @apply bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px];
   }
 }
+
+::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+  height: 4px; /* width of the entire scrollbar */
+  border-radius: 99rem;
+
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #11182760; /* color of the tracking area */
+  border-radius: 99rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #111827; /* color of the scroll thumb */
+  border-radius: 99rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #5046e5; /* color of the scroll thumb on hover */
+  }

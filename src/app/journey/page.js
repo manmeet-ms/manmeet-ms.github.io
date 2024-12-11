@@ -18,7 +18,7 @@ export default async function Journey() {
           id: '',
           title: 'Purchased essentials tools to enhance my workflow',
           description:
-            'Acquiring key tools and resources to streamline productivity and boost efficiency was a pivotal step. This investment set the stage for smoother operations and a more creative workflow.'
+            'Added a laptop stand and an extended desk mat to enhance the workspace&apos;s aesthetics and functionality. The stand helps with better heat dissipation, while the desk mat significantly improves the gliding experience of the external mouse. Investing in these key tools has been a practical step toward creating a more efficient and productive work environment.'
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
@@ -31,7 +31,7 @@ export default async function Journey() {
           id: '',
           title: 'Made Mistwrite',
           description:
-            'Launched Mistwrite, an innovative initiative focusing on improving user engagement and seamless accessibility. Early feedback has been encouraging, showcasing its potential impact.<br><br>[Try here](https://manmeets.vercel.app/)',
+            'Launched Mistwrite, my motive was keep main note keeping app clutter free and use this one for temporary note creation.<br><br>[Try here](https://manmeets.vercel.app/)',
           image: {
             url: '/assets/journey-covers/mistwrite-journey-cover.png',
             width: '600',
@@ -40,9 +40,9 @@ export default async function Journey() {
         },
         {
           id: '',
-          title: 'New Portolfio revamp',
+          title: 'Portolfio revamp',
           description:
-            'Transitioned from static HTML templates to modern frameworks like React and ShadCN UI. This evolution reflects my growth and commitment to delivering high-quality, dynamic portfolios. <br><br>from static basic , html templates -> html+tailwind -> using learning react -> now react + shadcn ui Our team grew significantly with the addition of talented professionals. This has allowed us to diversify our skills and accelerate innovation. Together, we are setting new benchmarks in the industry.',
+            'Transitioned from basic HTML templates to using modern tools like React and shadcn/ui, crafting high-quality, interactive portfolios with time. Credits to this site [here](/credits) ',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
@@ -53,7 +53,7 @@ export default async function Journey() {
           id: '',
           title: 'Completed my graduation',
           description:
-            'Achieving this academic milestone was a testament to years of dedication and effort. It marks the beginning of new opportunities and professional growth.',
+            'Academic milestone, a testament to years of dedication and effort. Yes there were ups and downs, but self-belief and faith in the almighty carried me through. In the end it is the beginning of new opportunities and professional growth.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
@@ -61,9 +61,9 @@ export default async function Journey() {
           // }
         },     {
           id: '',
-          title: 'bought new laptop',
+          title: 'A new comrade to power through my journey',
           description:
-            'Invested in a cutting-edge laptop to enhance performance and support demanding tasks. This upgrade signifies my focus on staying ahead in technology.',
+            'Upgrading from a Pentium laptop to a Ryzen 7-powered laptop marks a significant day.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
