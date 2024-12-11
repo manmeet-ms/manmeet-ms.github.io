@@ -1,4 +1,5 @@
 - add wrokspace amazons affiliates
+- impltemtn plrojects filfers based uon tgatags
 - journet in my insagam posts
   - apps i made 
   - my freelance projects 

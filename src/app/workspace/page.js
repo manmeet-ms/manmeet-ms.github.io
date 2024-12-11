@@ -56,7 +56,7 @@ export default async function Workspace() {
             </Table>
           </div>
 
-          <figure>
+          {/* <figure>
             <Image
               src="/assets/workspace.avif"
               alt="Workspace"
@@ -67,7 +67,7 @@ export default async function Workspace() {
               priority
             />
             <figcaption className="mt-2 break-all text-center text-xs font-light text-gray-500">Workspace</figcaption>
-          </figure>
+          </figure> */}
         </div>
       </div>
     </ScrollArea>
