@@ -407,11 +407,11 @@ export const FEATURED_ProjectTable_Home = [
     url: '/projects#wordpress'
   },
 
-  {
-    title: 'Discord Servers',
-    excerpt: 'Servers I setup for my freelance international as well as Indian clients, priortizinf their requirements, server aesthetics and funtionality in mind.',
-    url: '/projects#others'
-  },
+  // {
+  //   title: 'Discord Servers',
+  //   excerpt: 'Servers I setup for my freelance international as well as Indian clients, priortizinf their requirements, server aesthetics and funtionality in mind.',
+  //   url: '/projects#others'
+  // },
 
   // {
   //   title: 'Frontend Mentor Solutions',

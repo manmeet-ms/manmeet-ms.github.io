@@ -5,11 +5,12 @@ import { PageTitle } from '@/components/page-title'
 import { ScrollArea } from '@/components/scroll-area'
 import { ProjectCard } from './project-card'
 import { Button } from '@/components/ui/button'
-import { Download, DownloadIcon } from 'lucide-react'
+import { Download, DownloadIcon, FolderIcon, Link2Icon } from 'lucide-react'
 import {WEB_ProjectCategories
   ,WP_ProjectCategories
   ,UI_ProjectCategories
   ,OTHER_ProjectCategories} from "../../lib/constants"
+import { MarkdownRenderer } from '@/components/markdown-renderer'
 
   
   export default async function Projects() {
@@ -30,10 +31,10 @@ import {WEB_ProjectCategories
 </Button>
 </a>
           </div>
-          Projects made so far
-          Projects by Manmeet Singh <span className='bg-slate-400/30 font-medium rounded px-1 py-0.5' ><code>@manmeet-ms</code></span> .
-Explore the categorized content below or use the  above for all demos and mockups.
-Click the  next to each project to view live projects.
+        <MarkdownRenderer>
+        Explore the categorized content below or access all demos and mockups [here](drive.com). Live versions are hinted with the 
+
+        </MarkdownRenderer><Link2Icon className='inline-flex mx-1 bg-black/10 text-secondary-foreground p-1 rounded' strokeWidth={2.5} size={20}/> icon, the previews one have the <FolderIcon className='inline-flex mx-1 bg-black/10 text-secondary-foreground p-1 rounded' strokeWidth={2.5} size={20}/> icon.
           <div>
             <section className="body-font py-12 text-slate-600">
               <div className="container mx-auto ">

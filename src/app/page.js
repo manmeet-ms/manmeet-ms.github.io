@@ -29,14 +29,14 @@ export default async function Home() {
       <div className="content-wrapper">
         <div className="content">
           <PageTitle title="Home" className="lg:hidden" />
+
           <p>
-            Hi 👋 I'm Manmeet Singh, an aspiring software engineer, Wordpress Developer, UI/X enthusiast, and minimalist
-            based in Delhi, India.
+          Hi 👋 I'm Manmeet Singh, a passionate software engineer in the making, WordPress Developer, UI/UX enthusiast, and a minimalist, based in Delhi, India.
+
           </p>
           <p>
-            I remotely worked as an intern Wordpress Developer in my academic year. Presently, I am helping people with
-            their brands as a freelancer. Below is an overview of my experience in the form of projects built and work
-            using various technologies
+          During my academic years, I gained experience as a remote WordPress Developer intern. Currently, I am leveraging my skills as a freelancer, helping individuals bring their ideas to life. Below is a glimpse into my latest projects, showcasing projects and work with diverse tech
+
             {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
           </p>
           <div className="container py-2 flex w-full items-center justify-center gap-6 text-muted-foreground/30">
