@@ -13,22 +13,12 @@ export default async function Journey() {
     {
       year: 2024,
       logs: [
+
         {
           id: '',
-          title: 'Check discord logs',
+          title: 'Purchased essentials tools to enhance my workflow',
           description:
-            'This year marked a major milestone as we surpassed 1 million active users. It is a testament to the dedication of our team and the trust of our users. We remain committed to growing and innovating further.'
-          // image: {
-          //   url: 'https://placehold.co/600x300',
-          //   width: '600',
-          //   height: '300'
-          // }
-        },
-        {
-          id: '',
-          title: 'purchased essentials items to enhance my workflow',
-          description:
-            'This year marked a major milestone as we surpassed 1 million active users. It is a testament to the dedication of our team and the trust of our users. We remain committed to growing and innovating further.'
+            'Acquiring key tools and resources to streamline productivity and boost efficiency was a pivotal step. This investment set the stage for smoother operations and a more creative workflow.'
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
@@ -36,34 +26,44 @@ export default async function Journey() {
           // }
         },
 
-        {
-          id: '',
-          title: 'New Portolfio revamp',
-          description:
-            'from static basic , html templates -> html+tailwind -> using learning react -> now react + shadcn ui Our team grew significantly with the addition of talented professionals. This has allowed us to diversify our skills and accelerate innovation. Together, we are setting new benchmarks in the industry.',
-          // image: {
-          //   url: 'https://placehold.co/600x300',
-          //   width: '600',
-          //   height: '300'
-          // }
-        },
+        
         {
           id: '',
           title: 'Made Mistwrite',
           description:
-            'We introduced a new initiative aimed at redefining user engagement. The project focuses on delivering seamless experiences across all platforms. Early feedback has been overwhelmingly positive.<br><br>[Portfolio Link](https://manmeets.vercel.app/)',
+            'Launched Mistwrite, an innovative initiative focusing on improving user engagement and seamless accessibility. Early feedback has been encouraging, showcasing its potential impact.<br><br>[Try here](https://manmeets.vercel.app/)',
           image: {
-            url: '/portfolio_ss/covers/mistwrite-cover-alt.png',
+            url: '/assets/journey-covers/mistwrite-journey-cover.png',
             width: '600',
             height: '300'
           }
         },
-
         {
+          id: '',
+          title: 'New Portolfio revamp',
+          description:
+            'Transitioned from static HTML templates to modern frameworks like React and ShadCN UI. This evolution reflects my growth and commitment to delivering high-quality, dynamic portfolios. <br><br>from static basic , html templates -> html+tailwind -> using learning react -> now react + shadcn ui Our team grew significantly with the addition of talented professionals. This has allowed us to diversify our skills and accelerate innovation. Together, we are setting new benchmarks in the industry.',
+          // image: {
+          //   url: 'https://placehold.co/600x300',
+          //   width: '600',
+          //   height: '300'
+          // }
+        },
+        {
+          id: '',
+          title: 'Completed my graduation',
+          description:
+            'Achieving this academic milestone was a testament to years of dedication and effort. It marks the beginning of new opportunities and professional growth.',
+          // image: {
+          //   url: 'https://placehold.co/600x300',
+          //   width: '600',
+          //   height: '300'
+          // }
+        },     {
           id: '',
           title: 'bought new laptop',
           description:
-            'This year marked a major milestone as we surpassed 1 million active users. It is a testament to the dedication of our team and the trust of our users. We remain committed to growing and innovating further.',
+            'Invested in a cutting-edge laptop to enhance performance and support demanding tasks. This upgrade signifies my focus on staying ahead in technology.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
@@ -79,12 +79,23 @@ export default async function Journey() {
           id: 'wooden-desk',
           title: 'Hybrid Wooden Desk story',
           description:
-            'We successfully launched our flagship product, creating waves in the industry. The launch was accompanied by a robust marketing campaign and glowing reviews. Customers praised its ease of use and innovative features.',
+            'Crafted a hybrid wooden desk setup, combining aesthetics with functionality. This setup has transformed my workspace into a more productive and inspiring environment.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
           //   height: '300'
           // }
+        },
+        {
+          id: 'first-mechanical-keyboard',
+          title: 'Purchased my first mechanical keyboard',
+          description:
+            'Opted for a high-quality mechanical keyboard to enhance typing efficiency and overall productivity. This small yet impactful upgrade has been a game-changer.',
+          image: {
+            url: '/assets/journey-covers/mechanical-keyboard-journey-card-cover.jpg',
+            width: '600',
+            height: '300'
+          }
         }
       ]
     },
@@ -96,7 +107,7 @@ export default async function Journey() {
           id: '',
           title: 'First Client Acquired',
           description:
-            'We secured our first client, marking an important milestone in our story. This partnership reinforced our belief in our solutions and their market relevance. It set the stage for future successes.',
+            'Secured my first freelance client, marking the beginning of a fulfilling professional journey. This milestone reinforced my confidence and drive to excel.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',
@@ -107,7 +118,7 @@ export default async function Journey() {
           id: '',
           title: 'Setup first freelancing account',
           description:
-            'Our journey began with a vision to revolutionize the industry. Starting small, we laid a strong foundation with innovative ideas and a passionate team. From day one, our focus has been on delivering excellence.',
+            'Launched my freelancing journey by setting up my first account. This step opened doors to exciting opportunities and laid the foundation for a dynamic career.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',

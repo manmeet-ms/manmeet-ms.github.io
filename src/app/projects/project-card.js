@@ -14,7 +14,7 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
           <div className="rounded-lg  p-4 border bg-muted/20">
             <img className="mb-4 h-40 w-full rounded object-cover object-top  " src={cover} alt={title} />
             <h3 className="inline-flex items-center gap-1 text-xs font-medium tracking-normal text-primary">
-              {domain.includes('.') ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.5} />}
+              {domain.includes('.') ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.25} />}
 
               <span className="font-medium ">{domain}</span>
             </h3>

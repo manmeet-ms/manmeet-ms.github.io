@@ -1,5 +1,8 @@
 - add wrokspace amazons affiliates
 - impltemtn plrojects filfers based uon tgatags
+- projectcs categpries fruther expand into theoir niche cartegories native-on-site
+- projects preview is bative adn is displayed as a bento grid
+- 
 - journet in my insagam posts
   - apps i made 
   - my freelance projects 

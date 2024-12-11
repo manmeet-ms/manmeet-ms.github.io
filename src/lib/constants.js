@@ -18,7 +18,7 @@ export const PROFILES = {
   },
   linkedin: {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/manmeets-/',
+    url: 'https://www.linkedin.com/in/manmeets-',
     icon: <LinkedinIcon size={16} />
   },
   readcv: {
@@ -27,7 +27,7 @@ export const PROFILES = {
   },
   instagram: {
     title: 'Instagram',
-    url: 'https://www.instagram.com/manmeets__/',
+    url: 'https://www.instagram.com/manmeets__',
     icon: <InstagramIcon size={16} />
   },
   twitter: {
@@ -151,9 +151,9 @@ export const LINKS = [
 export const WEB_ProjectCategories = [
   {
     title: 'Mistwrite',
-    link: 'https://mistwrite.vercel.app/',
+    link: 'https://mistwrite.vercel.app',
     tags: ['AppWrite', 'React', 'Tailwind', 'shadcn/ui'],
-    cover: '/portfolio_ss/covers/mistwrite-cover.png',
+    cover: '/assets/project-covers/mistwrite-cover.png',
     domain: 'mistwrite.vercel.app',
     excerpt: 'A curated collection of tools for efficient coding and debugging workflows.'
   },
@@ -162,9 +162,9 @@ export const WEB_ProjectCategories = [
   
   {
     title: 'Linktrix',
-    link: '',
+    link: 'https://github.com/manmeet-ms/Linktrix.git',
     tags: [ 'React', 'Tailwind', 'shadcn/ui', 'template'],
-    cover: '/assets/fallback.avif',
+    cover: '/assets/project-covers/linktrix-cover.png',
     domain: 'linktrix.vercel.app',
     excerpt: 'All links at one place, fully responsive template for any use case.'
   },
@@ -308,7 +308,7 @@ export const UI_ProjectCategories = [
     title: '    Payment App',
     link: 'https://drive.google.com/open?id=11AxvOmMyNdj9AE5NVvpcKwaP6ZlZMVpR&usp=drive_fs',
     tags: ['Figma', 'UI'],
-    cover: '/portfolio_ss/covers/payment-app-cover.png',
+    cover: '/assets/project-covers/payment-app-cover.png',
     domain: 'Previews',
     excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
   },
@@ -316,7 +316,7 @@ export const UI_ProjectCategories = [
     title: 'Skill-up platform',
     link: 'https://drive.google.com/open?id=1-P8oOprY_S3M6y4ONKVk3a5sVc1r3M0n&usp=drive_fs',
     tags: ['Hackathon', 'Figma', 'UI'],
-    cover: '/portfolio_ss/covers/skillhashi-cover.png',
+    cover: '/assets/project-covers/skillhashi-cover.png',
     domain: 'Previews',
     excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
   },
@@ -324,7 +324,7 @@ export const UI_ProjectCategories = [
     //   title: 'Expense Tracking App',
     //   link: 'https://drive.google.com/open?id=1-P8oOprY_S3M6y4ONKVk3a5sVc1r3M0n&usp=drive_fs',
     // tags: ['Hackathon', 'Figma', 'UI'],
-  //   cover: '/portfolio_ss/covers/',
+  //   cover: '/assets/project-covers',
   //   domain: 'Previews',
   //   excerpt: 'Comprehensive tools for creating and refining stunning user interfaces.'
   // },
@@ -332,7 +332,7 @@ export const UI_ProjectCategories = [
   //   title: 'Inventory Management Dashboard',
   //   link: 'https://drive.google.com/open?id=1-P8oOprY_S3M6y4ONKVk3a5sVc1r3M0n&usp=drive_fs',
   //   tags: [''],
-  //   cover: '/portfolio_ss/covers/',
+  //   cover: '/assets/project-covers',
   //   domain: 'Previews',
   //   excerpt: 'A modern workspace for building and testing prototypes with real-world interactions.'
   // }
@@ -343,7 +343,7 @@ export const OTHER_ProjectCategories = [
     title: 'Logo Designs',
     tags:['hobby'],
     link: 'https://drive.google.com/open?id=1-T58bYcS2L_QG8D7fxJCf9V0s1alXPh0&usp=drive_fs',
-    cover: '/portfolio_ss/covers/logo-design-cover.png',
+    cover: '/assets/project-covers/logo-design-cover.png',
     domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
@@ -351,7 +351,7 @@ export const OTHER_ProjectCategories = [
     title: 'Discord servers',
     link: 'https://drive.google.com/open?id=1-Au5xZWU2yx3IIPJ7h0iIjNrrudWE3fy&usp=drive_fs',
     tags: ['freelance', 'international'],
-    cover: '/portfolio_ss/covers/dc-cover.png',
+    cover: '/assets/project-covers/dc-cover.png',
     domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
@@ -359,14 +359,14 @@ export const OTHER_ProjectCategories = [
     title: 'Gig Thumbnails',
     link: 'https://drive.google.com/open?id=1-9lPkY3TGo9d06umyZc9E_VDKpnxRq_5&usp=drive_fs',
     tags: ['freelance','thumbnails','self'],
-    cover: '/portfolio_ss/covers/gig-thumbnails-cover.png',    domain: 'Previews',
+    cover: '/assets/project-covers/gig-thumbnails-cover.png',    domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
   {
     title: 'Social Media post designs',
     link: 'https://drive.google.com/open?id=1-EeivEx1iQDo_ceEoJkMEu06MCvkTzz6&usp=drive_fs',
     tags: ['self'],
-    cover: '/portfolio_ss/covers/posts-cover.png',    
+    cover: '/assets/project-covers/posts-cover.png',    
     domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
@@ -384,7 +384,7 @@ export const FEATURED_ProjectTable_Home = [
   {
     title: 'Mistwrite',
     excerpt: 'I recently made this utility to provide quick, clutter-free temporary note-taking.',
-    url: 'https://mistwrite.vercel.app/'
+    url: 'https://mistwrite.vercel.app'
   },
 
   {
@@ -402,7 +402,7 @@ export const FEATURED_ProjectTable_Home = [
   // {
   //   title: 'Frontend Mentor Solutions',
   //   excerpt: 'Started back in 2019, will be resumed soon, contains solutions to frontend projects at the platform.',
-  //   url: 'https://fms-projects.vercel.app/'
+  //   url: 'https://fms-projects.vercel.app'
   // ,},  
   {
     title: 'Thumbnails & Posts for my Social Media',

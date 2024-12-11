@@ -7,12 +7,13 @@ export const Link = ({ href = '#', ...rest }) => {
   if (isExternal) {
     return (
       <a
-        href={href + '?ref=manmeets.vercel.app'}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link break-words after:content-['_↗']"
-        {...rest}
-      />
+      href={href + '?ref=manmeets.vercel.app'}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="link break-words after:content-['_↗']"
+      {...rest}
+    />
+      
     )
   }
 
