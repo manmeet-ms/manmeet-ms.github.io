@@ -222,6 +222,14 @@ export const WEB_ProjectCategories = [
 
 export const WP_ProjectCategories = [
   {
+    title: 'TheRefurbStore',
+    link: 'https://therefurbstore.in/',
+    tags: ['WordPress','E-commerce',  'Freelance'],
+    cover: '/portfolio_ss/1_websites/Wordpress_Websites/TheRefurbStore_Ecommerce/threfurbstore-cover.jpeg',
+    domain: 'therefurbstore.in',
+    excerpt: 'Business site - A robust platform tailored for impactful business workflows and collaborations.'
+  },
+  {
     title: 'ImpactHQ',
     link: 'https://drive.google.com/open?id=17ksTbHXZEQ2K6iN-id9F-fBXLq7cSWmP&usp=drive_fs',
     tags: ['WordPress','Business', 'Landing page'],
@@ -297,10 +305,11 @@ export const WP_ProjectCategories = [
     title: 'Past experiences',
     link: 'https://drive.google.com/open?id=108o8SnP691gngeeH-KTwYu5efmNssxBN&usp=drive_fs',
     tags: ['Intership'],
-    cover: 'https://img.freepik.com/free-photo/door-leading-magical-world_23-2151038219.jpg?ga=GA1.1.342254830.1718120885&semt=ais_hybrid',
+    // cover: 'https://img.freepik.com/free-photo/door-leading-magical-world_23-2151038219.jpg?ga=GA1.1.342254830.1718120885&semt=ais_hybrid',
+    cover: 'https://img.freepik.com/premium-photo/digital-illustration-girl-falling-through-clock-futuristic-cityscape_1371881-3362.jpg?ga=GA1.1.342254830.1718120885&semt=ais_hybrid',
     domain: 'Drive Links',
     excerpt: 'As an intern, I have worked with Labofy and Jethitech Solutions, managing and creating new websites while improving UX.'
-  }
+  } 
 ]
 
 export const UI_ProjectCategories = [
@@ -356,20 +365,20 @@ export const OTHER_ProjectCategories = [
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
   {
-    title: 'Gig Thumbnails',
+    title: 'Gig Thumbnails and social media posts',
     link: 'https://drive.google.com/open?id=1-9lPkY3TGo9d06umyZc9E_VDKpnxRq_5&usp=drive_fs',
     tags: ['freelance','thumbnails','self'],
     cover: '/assets/project-covers/gig-thumbnails-cover.png',    domain: 'Previews',
     excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
   },
-  {
-    title: 'Social Media post designs',
-    link: 'https://drive.google.com/open?id=1-EeivEx1iQDo_ceEoJkMEu06MCvkTzz6&usp=drive_fs',
-    tags: ['self'],
-    cover: '/assets/project-covers/posts-cover.png',    
-    domain: 'Previews',
-    excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
-  },
+  // {
+  //   title: 'Social Media post designs',
+  //   link: 'https://drive.google.com/open?id=1-EeivEx1iQDo_ceEoJkMEu06MCvkTzz6&usp=drive_fs',
+  //   tags: ['self'],
+  //   cover: '/assets/project-covers/posts-cover.png',    
+  //   domain: 'Previews',
+  //   excerpt: 'Essential utilities for photographers to organize and enhance their workflows.'
+  // },
   // {
   //   title: 'Personal Portfolio',
   //   link: '',
@@ -386,16 +395,21 @@ export const FEATURED_ProjectTable_Home = [
     excerpt: 'I recently made this utility to provide quick, clutter-free temporary note-taking.',
     url: 'https://mistwrite.vercel.app'
   },
+  {
+    title: 'Linktrix',
+    excerpt: 'Easy to use, LinkInBio/professional type links management open-source template',
+    url: 'https://github.com/manmeet-ms/Linktrix.git'
+  },
 
   {
     title: 'WordPress Sites',
-    excerpt: 'Showcases versatile, user-friendly WordPress sites tailored for various needs.',
+    excerpt: 'Showcase WordPress sites I managed during my internships as well as personal projects, tailored for various needs.',
     url: '/projects#wordpress'
   },
 
   {
     title: 'Discord Servers',
-    excerpt: 'Servers I setup for my freelance clients, keeping aesthetics and funtionality in mind.',
+    excerpt: 'Servers I setup for my freelance international as well as Indian clients, priortizinf their requirements, server aesthetics and funtionality in mind.',
     url: '/projects#others'
   },
 

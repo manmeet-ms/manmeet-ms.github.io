@@ -18,14 +18,14 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
 
               <span className="font-medium ">{domain}</span>
             </h3>
-            <h2 className="title-font mb-2 text-lg font-medium text-gray-900">{title}</h2>
+            <h2 className="title-font mb-2 text-lg font-medium text-gray-900 capitalize">{title}</h2>
             <p className="text-base leading-relaxed">{excerpt || note}</p>
             <div className="mb-2 flex flex-wrap gap-1 ">
               {tags
                 ? tags.map((item, idx) => (
-                    <span key={idx} className="rounded-md bg-primary/20 px-2 py-1 text-xs font-semibold tracking-[0.25px] text-primary">
-                      <code>#{item.replace(' ', '_').toLowerCase()}</code>
-                      {/* {item} */}
+                    <span key={idx} className="rounded-md bg-primary/20 px-2 py-1 text-xs font-medium tracking-[0.25px] text-primary">
+                      {/* <code>#{item.replace(' ', '_').toLowerCase()}</code> */}
+                      {item}
                     </span>
                   ))
                 : null}
