@@ -1,4 +1,4 @@
 git status --short
 git add -A
-git commit -m "almost ready to launch "
+git commit -m "launched"
 git push origin main

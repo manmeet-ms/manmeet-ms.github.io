@@ -31,7 +31,7 @@ export default async function Home() {
           <PageTitle title="Home" className="lg:hidden" />
 
           <p>
-          Hi 👋 I'm Manmeet Singh, a passionate software engineer in the making, WordPress Developer, UI/UX enthusiast, and a minimalist, based in Delhi, India.
+          Hi 👋 I'm Manmeet Singh, a passionate aspiring software engineer in the making, WordPress Developer, UI/UX enthusiast, and a minimalist, based in Delhi, India.
 
           </p>
           <p>
