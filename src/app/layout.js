@@ -67,11 +67,11 @@ export const metadata = {
   alternates: {
     canonical: '/'
   },
-  twitter: {
-    card: 'summary_large_image',
-    site: `@${PROFILES.twitter.username}`,
-    creator: `@${PROFILES.twitter.username}`
-  },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   site: `@${PROFILES.twitter.username}`,
+  //   creator: `@${PROFILES.twitter.username}`
+  // },
   other: {
     pinterest: 'nopin'
   }

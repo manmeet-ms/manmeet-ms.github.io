@@ -77,9 +77,9 @@ export default async function Journey() {
       logs: [
         {
           id: 'wooden-desk',
-          title: 'Hybrid Wooden Desk story',
+          title: 'Hybrid Wooden Desk',
           description:
-            'Crafted a hybrid wooden desk setup, combining aesthetics with functionality. This setup has transformed my workspace into a more productive and inspiring environment.',
+            'Crafted a hybrid wooden desk, combining aesthetics with functionality. This setup has transformed my workspace into a more productive and inspiring environment.',
           // image: {
           //   url: 'https://placehold.co/600x300',
           //   width: '600',

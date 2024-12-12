@@ -24,7 +24,7 @@ import { MarkdownRenderer } from '@/components/markdown-renderer'
         <div className="content">
           <div className='flex items-start justify-between' >
           <PageTitle title="Projects" />
-          <a target='_blank' href='/manmeetsingh-resume.pdf' download>
+          <a className="hidden lg:block" target='_blank' href='/manmeetsingh-resume.pdf' download>
 <Button className="inline-flex gap-2 items-center justify-center" >
     <DownloadIcon  size={14} strokeWidth={3} />
     Resume
@@ -32,9 +32,9 @@ import { MarkdownRenderer } from '@/components/markdown-renderer'
 </a>
           </div>
         <MarkdownRenderer>
-        Explore the categorized content below or access all demos and mockups [here](drive.com). Live versions are hinted with the 
+        Explore the categorized content below or access all demos and mockups [here](https://drive.google.com/open?id=1-1Fc9mpxTfLETmfo5FW-VOjlAE4rttbQ&usp=drive_fs). Live versions are hinted with the 
 
-        </MarkdownRenderer><Link2Icon className='inline-flex mx-1 bg-black/10 text-secondary-foreground p-1 rounded' strokeWidth={2.5} size={20}/> icon, the previews one have the <FolderIcon className='inline-flex mx-1 bg-black/10 text-secondary-foreground p-1 rounded' strokeWidth={2.5} size={20}/> icon.
+        </MarkdownRenderer><Link2Icon className='mx-1 text-slate-900 p-1 inline-flex -mt-0.5 bg-slate-300/80 border border-slate-600/20 rounded' strokeWidth={3} size={20}/>icon, the previews one have the <FolderIcon className='text-slate-900 p-1 inline-flex -mt-0.5 bg-slate-300/80 border border-slate-600/20 rounded' strokeWidth={3.5} size={20}/> icon.
           <div>
             <section className="body-font py-12 text-slate-600">
               <div className="container mx-auto ">

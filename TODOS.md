@@ -1,4 +1,5 @@
-- add wrokspace amazons affiliates
+<!-- - add wrokspace amazons affiliates -->
+- quick way to scan a ge connected/contact me s onl visible n desktop
 - impltemtn plrojects filfers based uon tgatags
 - projectcs categpries fruther expand into theoir niche cartegories native-on-site
 - projects preview is bative adn is displayed as a bento grid

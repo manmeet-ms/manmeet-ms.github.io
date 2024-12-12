@@ -1,9 +1,9 @@
 import { FolderIcon, FolderOpenIcon, Link2Icon } from 'lucide-react'
 
-export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, customIcon }) => {
+export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, customIcon }, index) => {
   return (
     <>
-      <div className="w-full p-4 md:w-1/2 ">
+      <div key={index} className="w-full p-4 md:w-1/2 ">
         <a
           // className="   flex aspect-auto min-w-0 cursor-pointer flex-col gap-4 overflow-hidden rounded-xl bg-white p-4 transition-colors duration-300 hover:bg-gray-50"
           href={`${link}?ref=manmeets.vercel.app`}
@@ -14,7 +14,7 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
           <div className="rounded-lg  p-4 border bg-muted/20">
             <img className="mb-4 h-40 w-full rounded object-cover object-top  " src={cover} alt={title} />
             <h3 className="inline-flex items-center gap-1 text-xs font-medium tracking-normal text-primary">
-              {domain.includes('.') ? <Link2Icon size={14} strokeWidth={2.25} /> : <FolderIcon size={13} strokeWidth={2.25} />}
+              {domain.includes('.') ? <Link2Icon size={14} strokeWidth={2.25} /> : (customIcon||(<FolderIcon size={13} strokeWidth={2.25} />))}
 
               <span className="font-medium ">{domain}</span>
             </h3>
@@ -23,7 +23,7 @@ export const ProjectCard = ({ link, cover, title, tags, domain, excerpt, note, c
             <div className="mb-2 flex flex-wrap gap-1 ">
               {tags
                 ? tags.map((item, idx) => (
-                    <span key={idx} className="rounded-md bg-primary/20 px-2 py-1 text-xs font-medium tracking-[0.25px] text-primary">
+                    <span key={idx} className="capitalize rounded-md bg-primary/20 px-2 py-1 text-xs font-medium tracking-[0.25px] text-primary">
                       {/* <code>#{item.replace(' ', '_').toLowerCase()}</code> */}
                       {item}
                     </span>

@@ -144,9 +144,11 @@ export default async function Stack() {
     <ScrollArea useScrollAreaId>
       <GradientBg />
       <FloatingHeader scrollTitle="Stack" />
+      
       <div className="content-wrapper">
         <div className="content">
           <PageTitle title="Stack" />
+          <p>List of tools in my daily workflow.</p>
           <Suspense fallback={<ScreenLoadingSpinner />}>
             <div className="flex flex-col items-stretch gap-12">
               <ul className="mb-4 flex list-disc flex-col gap-0.5 pl-6">

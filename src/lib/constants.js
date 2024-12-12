@@ -30,29 +30,48 @@ export const PROFILES = {
     url: 'https://www.instagram.com/manmeets__',
     icon: <InstagramIcon size={16} />
   },
-  twitter: {
-    title: 'X (Twitter)',
-    username: 'onurschu',
-    url: 'https://x.com/manmeets_dev',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="size-4"
-        width="44"
-        height="44"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="#000000"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-      </svg>
-    )
-  }
+  // twitter: {
+  //   title: 'X (Twitter)',
+  //   username: 'onurschu',
+  //   url: 'https://x.com/manmeets_dev',
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       className="size-4"
+  //       width="44"
+  //       height="44"
+  //       viewBox="0 0 24 24"
+  //       strokeWidth="1.5"
+  //       stroke="#000000"
+  //       fill="none"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //     >
+  //       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  //       <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+  //       <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+  //     </svg>
+  //   )
+  // },
+  // redbubble: {
+  //   title: 'Redbubble',
+  //   username: 'manmeet-s',
+  //   url: 'https://www.redbubble.com/people/manmeet-s/shop?asc=u',
+  //   icon: (
+  //     <svg className='size-6' width="592" height="419" viewBox="0 0 592 419" fill="none" xmlns="http://www.w3.org/2000/svg">
+  //     <g clip-path="url(#clip0_179_236)">
+  //     <path d="M510.197 174.576L495.879 190.395L515.611 198.513C535.746 206.796 548.118 225.411 548.118 257.691C548.118 280.274 539.858 297.082 525.402 308.6C510.509 320.466 487.455 327.941 456.093 327.941H353.768V68.891H448.268C482.363 68.891 500.052 78.8233 509.598 90.0552C519.541 101.754 523.118 117.723 523.118 134.241C523.118 152.792 518.278 165.646 510.197 174.576ZM230.058 214.68L211.555 221.949L223.623 237.747L292.525 327.941H84.118V68.891H183.318C213.024 68.891 234.831 76.8741 249.046 89.7042C263.059 102.353 271.443 121.28 271.443 146.991C271.443 180.574 254.981 204.888 230.058 214.68ZM301.668 -216.209C72.4087 -216.209 -113.332 -30.4682 -113.332 198.791C-113.332 428.05 72.4087 613.791 301.668 613.791C530.927 613.791 716.668 428.05 716.668 198.791C716.668 -30.4682 530.927 -216.209 301.668 -216.209Z" stroke="black" stroke-width="30"/>
+  //     </g>
+  //     <defs>
+  //     <clipPath id="clip0_179_236">
+  //     <rect width="560" height="400" fill="white" transform="translate(0.833984)"/>
+  //     </clipPath>
+  //     </defs>
+  //     </svg>
+      
+      
+  //   )
+  // }
 
   // medium: {
   //   title: 'Medium',
@@ -78,23 +97,23 @@ export const PROFILES = {
   // }
 }
 
-export const TWEETS_COLLECTION_ID = 15896982
+// export const TWEETS_COLLECTION_ID = 15896982
 
-export const COLLECTION_IDS = [
-  18259129,
-  15968768,
-  23598938,
-  16949672,
-  15807896,
-  15807897,
-  15969648,
-  16338467,
-  TWEETS_COLLECTION_ID,
-  25589709,
-  17139082,
-  22029101,
-  39696243
-]
+// export const COLLECTION_IDS = [
+//   18259129,
+//   15968768,
+//   23598938,
+//   16949672,
+//   15807896,
+//   15807897,
+//   15969648,
+//   16338467,
+//   TWEETS_COLLECTION_ID,
+//   25589709,
+//   17139082,
+//   22029101,
+//   39696243
+// ]
 
 export const LINKS = [
   {
