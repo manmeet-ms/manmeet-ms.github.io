@@ -410,15 +410,25 @@ export const OTHER_ProjectCategories = [
 
 export const FEATURED_ProjectTable_Home = [
   {
-    title: 'Mistwrite',
-    excerpt: 'I recently made this utility to provide quick, clutter-free temporary note-taking.',
-    url: 'https://mistwrite.vercel.app'
+    title: 'Homelab setup',
+    excerpt: 'Converted my first ever laptop to home server to utilize 500GB space, for archived files.',
+    url: '/journey'
   },
   {
-    title: 'Linktrix',
-    excerpt: 'Easy to use, LinkInBio/professional type links management open-source template',
-    url: 'https://github.com/manmeet-ms/Linktrix.git'
+    title: 'Essentia',
+    excerpt: 'A utility to make quick-fast list of ration items.',
+    url: 'https://list-exporter.vercel.app'
   },
+  {
+    title: 'Mistwrite',
+    excerpt: 'A utility to provide quick, clutter-free temporary note-taking.',
+    url: 'https://mistwrite.vercel.app'
+  },
+  // {
+  //   title: 'Linktrix',
+  //   excerpt: 'Easy to use, LinkInBio/professional type links management open-source template',
+  //   url: 'https://github.com/manmeet-ms/Linktrix.git'
+  // },
 
   {
     title: 'WordPress Sites',

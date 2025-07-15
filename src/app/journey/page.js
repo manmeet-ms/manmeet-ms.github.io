@@ -11,6 +11,35 @@ import { GradientBg3 } from '@/components/gradient-bg'
 export default async function Journey() {
   const journeyBook = [
     {
+      year: 2025,
+      logs: [
+
+        {
+          id: '',
+          title: 'Built Home Server - \'Akaalforge\'',
+          description:
+            '(Temporarily) Escaped the cost of external storage, so converted this laptop to a little NAS of 500GB.',
+          image: {
+            url: '/assets/journey-covers/homelab.jpg',
+            width: '300',
+            height: '600'
+          }
+        },
+        {
+          id: '',
+          title: 'Made Essentia',
+          description:
+            ' A quick and feature-rich Ration list exporter. For making monthly lists, paperless and user friendly.<br><br>[Try here](https://list-exporter.vercel.app/)'
+,          image: {
+            url: '/assets/journey-covers/essentia-journey-cover.png',
+            width: '600',
+            height: '300'
+          }
+        },
+       
+      ]
+    },
+    {
       year: 2024,
       logs: [
 

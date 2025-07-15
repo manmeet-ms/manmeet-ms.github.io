@@ -39,7 +39,7 @@ export default async function Home() {
 
             {/* <a className='text-blue-500' href="/about"> Read more <ChevronRight className='inline-flex' size={14}/></a> */}
           </p>
-          <iframe  className='w-full rounded-md'  src="https://git-graph.vercel.app/embed/manmeet-ms?showColorLegend=true&showWeekdayLabels=true&showMonthLabels=true&showTotalCount=true&blockMargin=2&blockRadius=0&blockSize=12&fontSize=8&weekStart=0&year=2024"></iframe>
+          <iframe  className='w-full rounded-md'  src="https://git-graph.vercel.app/embed/manmeet-ms?showColorLegend=true&showWeekdayLabels=true&showMonthLabels=true&showTotalCount=true&blockMargin=2&blockRadius=0&blockSize=12&fontSize=8&weekStart=0&year=2025"></iframe>
           <div className="container py-2 flex w-full items-center justify-center gap-6 text-muted-foreground/30">
             <AsteriskIcon/>
             {/* <AsteriskIcon/>
