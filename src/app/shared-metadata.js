@@ -1,6 +1,6 @@
 export const sharedMetadata = {
   title: 'Manmeet Singh',
-  description: 'Aspiring Software Engineer, DJ, writer, and minimalist, based in Amsterdam, The Netherlands',
+  description: 'Aspiring Software Engineer, UX enthusiast, and minimalist',
   url: 'https://manmeets.vercel.app',
   ogImage: {
     width: 1200,
