@@ -1,0 +1,312 @@
+import { Button } from '@/components/ui/button.jsx'
+import Link from 'next/link'
+import { Suspense } from 'react'
+
+import { SideMenu } from '@/components/side-menu'
+import { ListItem } from '@/components/list-item'
+import { Toaster } from '@/components/ui/sonner'
+
+ 
+import { FloatingHeader } from '@/components/floating-header'
+import { GradientBg2 } from '@/components/gradient-bg'
+import { PageTitle } from '@/components/page-title'
+import { ScreenLoadingSpinner } from '@/components/screen-loading-spinner'
+import { ScrollArea } from '@/components/scroll-area'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { ProjectCard } from './project-card'
+
+export default async function Projects() {
+  const web_projectCategories = [
+    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
+    {
+      title: 'wp VoDScEe',
+      link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Lorem domain',
+      excerpt: 'Lorem excert',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+    {
+      title: 'wp VoDScEe',
+      link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Lorem domain',
+      excerpt: 'Lorem excert',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    }
+  ]
+  const wp_projectCategories = [
+    {
+      title: 'ImpactHQ',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'Business',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
+    {
+      title: 'Shopphoria',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'E-commerce',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'DevDiary',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'Personal Portfolio',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'LeadGen',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'Marketing Agency',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'RxReady',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+        excerpt: 'Medical Store',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'Newsreader',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'News',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'RiskRadar',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'Finance Consultancy',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'Labofy',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'Medical store/Appointment booking',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+
+    {
+      title: 'JethiTech',
+      // link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Screenshots',
+      excerpt: 'Agency/Consulting',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    }
+  ]
+  const ui_projectCategories = [
+    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
+    {
+      title: 'wp VoDScEe',
+      link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Lorem domain',
+      excerpt: 'Lorem excert',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+    {
+      title: 'wp VoDScEe',
+      link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Lorem domain',
+      excerpt: 'Lorem excert',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    }
+  ]
+  const other_projectCategories = [
+    // vscode, edge, obsidian, git for sync , virtualbox, phtoshop, dngrep, other utilities,extensions and tools for android (great way to credit them)
+    {
+      title: 'wp VoDScEe',
+      link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Lorem domain',
+      excerpt: 'Lorem excert',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    },
+    {
+      title: 'wp VoDScEe',
+      link: '#',
+      cover: 'https://placehold.co/600x400',
+      domain: 'Lorem domain',
+      excerpt: 'Lorem excert',
+      // note: 'Lorem note',
+      description: 'My most recently used theme, inspired by Vercel Theme ▲ and One Dark Pro.'
+    }
+  ]
+
+  return (
+    <ScrollArea useScrollAreaId>
+      <GradientBg2 />
+      <FloatingHeader scrollTitle="Stack" />
+      <div className="content-wrapper">
+        <div className="content">
+          <PageTitle title="Projects" />
+          Projects made so far
+   
+          <div>
+            <Button asChild variant="link" className="inline px-0">
+              <Link href="#">
+                <h2 className="mb-4 mt-8">Web Projects</h2>
+              </Link>
+            </Button>
+            <Suspense fallback={<ScreenLoadingSpinner />}>
+              <div className="flex flex-col items-stretch gap-12">
+                <Carousel>
+                  <CarouselContent>
+                    {web_projectCategories.map((project, index) => (
+                      <>
+                        <CarouselItem key={index} className="basis-1/2">
+                          <ProjectCard
+                            link={project.link}
+                            cover={project.cover}
+                            title={project.title}
+                            domain={project.domain}
+                            excerpt={project.excerpt}
+                            note={project.note}
+                          />
+                        </CarouselItem>
+                      </>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+            </Suspense>
+          </div>
+          <div>
+            <Button asChild variant="link" className="inline px-0">
+              <Link href="#">
+                <h2 className="mb-4 mt-8">Wordpress Websites</h2>
+              </Link>
+            </Button>
+            <Suspense fallback={<ScreenLoadingSpinner />}>
+              <div className="flex flex-col items-stretch gap-12">
+                <Carousel>
+                  <CarouselContent>
+                    {wp_projectCategories.map((project, index) => (
+                      <>
+                        <CarouselItem key={index} className="basis-1/2">
+                          <ProjectCard
+                            link={project.link}
+                            cover={project.cover}
+                            title={project.title}
+                            domain={project.domain}
+                            excerpt={project.excerpt}
+                            note={project.note}
+                          />
+                        </CarouselItem>
+                      </>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+            </Suspense>
+          </div>
+          <div>
+            <Button asChild variant="link" className="inline px-0">
+              <Link href="#">
+                <h2 className="mb-4 mt-8">User Interfaces</h2>
+              </Link>
+            </Button>
+            <Suspense fallback={<ScreenLoadingSpinner />}>
+              <div className="flex flex-col items-stretch gap-12">
+                <Carousel>
+                  <CarouselContent>
+                    {ui_projectCategories.map((project, index) => (
+                      <>
+                        <CarouselItem key={index} className="basis-1/2">
+                          <ProjectCard
+                            link={project.link}
+                            cover={project.cover}
+                            title={project.title}
+                            domain={project.domain}
+                            excerpt={project.excerpt}
+                            note={project.note}
+                          />
+                        </CarouselItem>
+                      </>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+            </Suspense>
+          </div>
+          <div>
+            <Button asChild variant="link" className="inline px-0">
+              <Link href="#">
+                <h2 className="mb-4 mt-8">Others</h2>
+              </Link>
+            </Button>
+            <Suspense fallback={<ScreenLoadingSpinner />}>
+              <div className="flex flex-col items-stretch gap-12">
+                <Carousel>
+                  <CarouselContent>
+                    {other_projectCategories.map((project, index) => (
+                      <>
+                        <CarouselItem key={index} className="basis-1/2">
+                          <ProjectCard
+                            link={project.link}
+                            cover={project.cover}
+                            title={project.title}
+                            domain={project.domain}
+                            excerpt={project.excerpt}
+                            note={project.note}
+                          />
+                        </CarouselItem>
+                      </>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+            </Suspense>
+          </div>
+        </div>
+      </div>
+    </ScrollArea>
+  )
+}
